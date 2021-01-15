@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco TurningPoint</title>
+      <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+        <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+       <!--styling-->    
+     <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
+<script type="text/javascript"> 
+//Initializing
+var i = 0;
+var images = []; //array
+var time = 1000; // time in millie seconds
+
+//images
+
+images[0] = "url(assets/img/pexels-wildan-zainul-faki-3364110.jpg)";
+images[1] = "url(assets/img/pexels-jimmy-chan-1657935.jpg";
+images[2] = "url(assets/img/pexels-vladyslav-dukhin-4070727.jpg)";
+images[3] = "url(assets/img/pexels-nataliya-vaitkevich-4813970.jpg)";
+images[4] = "url(assets/img/pexels-mike-chai-842339.jpg)";
+images[5] = "url(assets/img/pexels-duané-viljoen-5097418.jpg)";
+//function
+
+function changeImage() {
+    var el = document.getElementById('main_center');
+    el.style.backgroundImage = images[i];
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout('changeImage()', time);
+}
+
+window.onload = changeImage;
+</script>
+</head>
+<body>
+
+    <header>
+        <div class="container text-center">
+    <div class="logo"> <p>Eco Turning-Point</p></div>
+    <div class="nav">
+        <ul class="list-inline">
+            <li class="list-inline-item"> <a>Home</a></li>
+            <li class="list-inline-item"> <a>Info/Country</a></li>
+            <li class="list-inline-item"><a>Take Action</a></li>
+        </ul>
+    </div>
+    </div>
+    </header>
+<section class="text-center" id="main">
+    <div class="mainframe container">
+        <div class="row">
+            <div class="col-4 main_left">
+                <h1>Background</h1>
+                <p>
+                    warming, the 6 th mass extinction dsfgfasd
+                    AgdfagAgagasdg dasfgdag adsgd ag sdgf 
+                    Dsfag a adfg aGlobal adfg  dafg sdgfs asdfg 
+                    Asdd afg 
+                    Asdfd af  agasdfsadf  rrag a ag asdf 
+                    aagf as
+                    asdgf asdfa  
+                    E rarea a ag  a aretgf
+                </p>
+            </div>
+            <div class="col-4 main_center text-center" id="main_center">
+            </div>
+            <div class="col-4 main_right"  id="main_right">
+                  <h1>Indicator - World</h1>
+                 <ul>
+                    <li>World population: </li>
+                    <li>Mean life exp: </li>
+                    <li>Poverty: </li>
+                     <li>Annual Mean temp: </li>
+                    <li>Annual CO2-emission: </li> 
+                    <li>Deforastion rate:</li>
+                    <li>Species loss: </li>
+                </ul>
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+<div class="footerframe container">
+    <div class="row">
+    <div class="col-4 text-center">
+        <h1>About</h1>
+        <p> Sfsd fs f dsgdgaedgecxv esatgaedrgae
+            sdfsdfsdgfasdg sd
+            asdgasdgdgadfgzdafgadfgadfggd
+        </p>
+    </div>
+    <div class="col-4 text-center">    
+          <h1>Quick Links</h1>
+             <ul>
+            <li>Home</li>
+            <li>Info/Country</li>
+            <li>Take Action</li>
+        </ul>
+    </div>
+    <div class="col-4 text-center">
+               <h1 class="text-center">Contact Us</h1>
+             <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+        </ul>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+</html>

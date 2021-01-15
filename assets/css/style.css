@@ -1,0 +1,126 @@
+/* Fontstyle */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+/* Body */
+
+Body{
+    background-image: url("../img/pexels-pixabay-60013.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 70%;
+}
+
+/* Header */
+
+Header {
+    padding: 40px 0px 20px 0;
+    background-color: black;
+}
+
+.logo p{
+    font-family: "Roboto", sans-serif;
+     color:#e8e6e1;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.nav{
+    color:#e8e6e1;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 500; 
+    justify-content: center;
+  }
+
+.nav ul{
+       list-style-type: none;
+       text-align: center;
+      }
+.nav li{
+    margin: 0 28px 0 28px;
+}
+
+/* Main Section */
+
+.mainframe{
+margin-top: 200px;
+    height: 600px;
+    color:#ddd5bc;
+text-shadow: 1px solid black;}
+
+.main_left, .main_center, .main_right{
+    margin: 20px, 20px, 20px, 20px;
+}
+
+.main_left h1{
+    padding: 20px 0px 0 20px;
+    font-family: "Roboto", sans-serif;
+      font-size: 28px;
+    font-weight: 600;   
+}
+
+.main_left p{
+    padding: 10px 0px 0 20px;
+    font-family: "Titillium", sans-serif;
+    font-size: 18px;
+    font-weight: 400;   
+}
+
+.main_center {
+    padding: 20px 0px 0 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 90%;
+    opacity: 80%;
+   
+}
+
+.main_center img{
+    height: 320px;
+    width: 280px;
+ 
+}
+
+.main_right h1{
+    padding: 20px 10px 0 0px;
+    font-family: "Roboto", sans-serif;
+      font-size: 28px;
+    font-weight: 600;   
+}
+
+.main_right ul{
+    list-style-type: none;
+    font-family: "Titillium", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+footer{
+    color: black;
+    background-color: white;
+}
+
+.footerframe h1{
+        padding: 20px 0px 0 0px;
+    font-family: "Roboto", sans-serif;
+      font-size: 24px;
+    font-weight: 600;   
+}
+
+.footerframe ul{  
+    list-style-type: none;
+    font-family: "Titillium", sans-serif;
+    font-weight: 400;
+    font-size: 16px;}
+
+.footerframe p{  
+    font-family: "Titillium", sans-serif;
+    font-weight: 400;
+    font-size: 16px;}
+
+
+/*Responsive actions */
