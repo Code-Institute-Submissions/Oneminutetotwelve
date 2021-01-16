@@ -18,12 +18,34 @@
        <!--styling-->    
      <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
 <script type="text/javascript"> 
-//Initializing
+
+// World data input 
+
+let worldData = "https://api.worldbank.org/v2/country/all";
+
+function getWorldData(){
+var base = new XMLHttpRequest();
+base.open ("GET", worldData);
+base.send();
+
+base.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // document.getElementById("data").innerHTML = this.responseText;//
+       // console.log(typeof(JSON.parse(this.responseText))); //
+       //console.log(base); //
+       //setData(JSON.parse(this.responseText));//
+       let data=JSON.parse(this.responseText); 
+       console.log(data);
+          }
+}
+
+};
+//Initializing img-ticker
 var i = 0;
 var images = []; //array
-var time = 1000; // time in millie seconds
+var time = 1500; // time in millie seconds
 
-//images
+//images in ticker
 
 images[0] = "url(assets/img/pexels-wildan-zainul-faki-3364110.jpg)";
 images[1] = "url(assets/img/pexels-jimmy-chan-1657935.jpg";
@@ -31,10 +53,11 @@ images[2] = "url(assets/img/pexels-vladyslav-dukhin-4070727.jpg)";
 images[3] = "url(assets/img/pexels-nataliya-vaitkevich-4813970.jpg)";
 images[4] = "url(assets/img/pexels-mike-chai-842339.jpg)";
 images[5] = "url(assets/img/pexels-duané-viljoen-5097418.jpg)";
-//function
+
+//function ticker
 
 function changeImage() {
-    var el = document.getElementById('main_center');
+    var el = document.getElementById('main_right');
     el.style.backgroundImage = images[i];
     if (i < images.length - 1) {
         i++;
@@ -45,6 +68,10 @@ function changeImage() {
 }
 
 window.onload = changeImage;
+
+
+
+
 </script>
 </head>
 <body>
@@ -64,7 +91,7 @@ window.onload = changeImage;
 <section class="text-center" id="main">
     <div class="mainframe container">
         <div class="row">
-            <div class="col-4 main_left">
+            <div class="col-6 main_left">
                 <h1>Background</h1>
                 <p>
                     warming, the 6 th mass extinction dsfgfasd
@@ -77,21 +104,26 @@ window.onload = changeImage;
                     E rarea a ag  a aretgf
                 </p>
             </div>
-            <div class="col-4 main_center text-center" id="main_center">
+            <div class="col-1"></div>
+            <div class="col-4 main_right text-center" id="main_right">
             </div>
-            <div class="col-4 main_right"  id="main_right">
-                  <h1>Indicator - World</h1>
-                 <ul>
+            <div class="col-1"></div>
+              </div>
+    </div>
+    <div class="container factsframe">
+        <div class="factsmain">
+                   <ul>
                     <li>World population: </li>
                     <li>Mean life exp: </li>
                     <li>Poverty: </li>
+                 </ul>
+                 <ul>
                      <li>Annual Mean temp: </li>
                     <li>Annual CO2-emission: </li> 
                     <li>Deforastion rate:</li>
                     <li>Species loss: </li>
                 </ul>
         </div>
-    </div>
     </div>
 </section>
 <footer>
