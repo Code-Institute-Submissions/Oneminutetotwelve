@@ -1,6 +1,6 @@
 # EcoTurningPoint
 
-
+![Mockup](assets/wireframe/EcoTurningPoint.jpg "Typography EcoTurningPoint")
 
 #### The aim of this website is to in a simplistic way present todays challenges by using realtime data on global and on countrywise level. This will be done using data from Worldbank and connect it to Google-map. Finally I will present options on how to get involved or support different organisations working these challenges. 
 ------
