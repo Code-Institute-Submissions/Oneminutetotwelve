@@ -51,10 +51,10 @@ The personas main goal is to find informations about today problems so that they
 ### Design Choices
 
 #### Typology
-![Typology](assets/wireframe/typo.png "Typography EcoTurningPoint")
+![Typology](assets/wireframe/typo.jpg "Typography EcoTurningPoint")
 
 #### Wireframe
-![Typology](assets/wireframe/Ecoturningpoint.pdf "Wireframe EcoTurningPoint")
+![Wireframe](assets/wireframe/Ecoturningpoint.pdf "Wireframe EcoTurningPoint")
 
 
 ### Credit
