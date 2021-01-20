@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+     "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,8 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />
+
 
         <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,25 +24,47 @@
 
 // World data input 
 
-let worldData = "https://api.worldbank.org/v2/country/all";
+//fetch("https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL/?format=json&date=2010:2020&per_page=5000").then(popresponse => popresponse.json()).then(popdata => console.log(popdata))
 
-function getWorldData(){
-var base = new XMLHttpRequest();
-base.open ("GET", worldData);
-base.send();
+ fetch('https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL/?format=json&date=2010:2020&per_page=5000')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (popdata) {
+                appendpopData(popdata);
+                console.log(popdata);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
 
-base.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+     function appendpopData(popdata) {
+        console.log(popdata[1].length) 
+        for (var i = 1; i < popdata[1].length; i+=11) {
+        let WorldPopData = document.getElementById("Worldpop").innerHTML = 'World population' + ' [ ' + popdata[1][1].date + ' ]: ' + console.log(add(popdata[1][i].value));
+     }
+    }
+
+
+//function loadData(){
+//var base = new XMLHttpRequest;
+//base.open ("GET", "http://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json", true);
+
+//base.onreadystatechange = function() {
+    //if (this.readyState == 4 && this.status == 200) {
        // document.getElementById("data").innerHTML = this.responseText;//
        // console.log(typeof(JSON.parse(this.responseText))); //
        //console.log(base); //
        //setData(JSON.parse(this.responseText));//
-       let data=JSON.parse(this.responseText); 
-       console.log(data);
-          }
-}
+       //let data=JSON.parse(this.responseText); 
+       //console.log(data);    
+   //// }
+//}
+//base.send(); 
+//}
 
-};
+
+
 //Initializing img-ticker
 var i = 0;
 var images = []; //array
@@ -113,7 +138,7 @@ window.onload = changeImage;
     <div class="container factsframe">
         <div class="factsmain">
                    <ul>
-                    <li>World population: </li>
+                    <li id="Worldpop"> </li>
                     <li>Mean life exp: </li>
                     <li>Poverty: </li>
                  </ul>
