@@ -73,16 +73,36 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
                 return resp.json();
             })
             .then(function (agedata) {
-                //appendageData(agedata);
-                console.log(agedata);
+                appendageData(agedata);
+                //console.log(agedata);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 
         function appendageData(agedata) {
-        let WorldageData = document.getElementById("ageData").innerHTML = 'Mean life expectence' + ' [ ' + agedata[1][2].date + ' / World ]: ' + console.log(agedata[1][2].value) + '  years';
+        let WorldageData = document.getElementById("ageData").innerHTML = 'Mean life expectence' + ' [ ' + agedata[1][2].date + ' / World ]: ' + agedata[1][2].value.toFixed(1) + '  year';
         }
+
+        fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SI.POV.DDAY?format=json&per_page=100&source=2&date=2010:2020")
+
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (povertydata) {
+                appendagePovertyData(povertydata);
+            console.log(povertydata);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendagePovertyData(povertydata) {
+        let WorldpovertyData = document.getElementById("povertyData").innerHTML = 'Mean life expectence' + ' [ ' + povertydata[1][2].date + ' / World ]: ' + povertydata[1][2].value.toFixed(2) + '  year';
+        }
+
+
+
 
 //Initializing img-ticker
 let i = 0;
