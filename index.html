@@ -91,17 +91,48 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
             })
             .then(function (povertydata) {
                 appendagePovertyData(povertydata);
-            console.log(povertydata);
+            //console.log(povertydata);
             })
-            .catch(function (err) {
-                console.log('error: ' + err);
+            .catch(function (err1) {
+                console.log('error: ' + err1);
             });
 
         function appendagePovertyData(povertydata) {
-        let WorldpovertyData = document.getElementById("povertyData").innerHTML = 'Mean life expectence' + ' [ ' + povertydata[1][2].date + ' / World ]: ' + povertydata[1][2].value.toFixed(2) + '  year';
+        let WorldpovertyData = document.getElementById("povertyData").innerHTML = 'Poverty headcount ratio at $1.90 a day (% of population)' + ' [ ' + povertydata[1][3].date + ' / World ]: ' + povertydata[1][3].value.toFixed(2) + '  %';
         }
 
 
+        fetch("https://api.worldbank.org/v2/en/country/1W/indicator/EN.ATM.CO2E.KT?format=json&per_page=20000&source=2")
+
+             .then(function (respnse) {
+                return respnse.json();
+            })
+            .then(function (CO2data) {
+                appendageCO2Data(CO2data);
+            console.log(CO2data);
+            })
+            .catch(function (err2) {
+                console.log('error: ' + err2);
+            });
+
+        function appendageCO2Data(CO2data) {
+        let WorldCO2Data = document.getElementById("CO2Data").innerHTML = 'Annual carbon dioxide emissions '+ '[ ' + CO2data[1][4].date + ' / World ]: ' + CO2data[1][4].value.toFixed(2) + '  Kilo tonnes';        //Carbon dioxide emissions
+        }
+
+        fetch ("https://api.worldbank.org/v2/en/country/1W/indicator/ER.FST.DFST.ZG?format=json&per_page=20000&source=18")
+
+             .then(function (rspns) {
+                return rspns.json();
+            })
+            .then(function (Deforestdata) {
+                appendageDeforestData(Deforestdata);
+            console.log(Deforestdata);
+            })
+            .catch(function (err3) {
+                console.log('error: ' + err3);
+            });
+
+        let WorldCO2Data = document.getElementById("DeforestData").innerHTML = 'Procentage of natural forest area converted to other uses on annual basis' + '[ ' + Deforestdata[1][4].date + ' / World ]: ' + Deforestdata[1][4].value.toFixed(2) + '  %';
 
 
 //Initializing img-ticker
@@ -179,11 +210,11 @@ window.onload = changeImage;
                    <ul>
                     <li id="Worldpop"> </li>
                     <li id="ageData"></li>
-                    <li>Poverty: </li>
+                    <li id="povertyData"></li>
                  </ul>
                  <ul>
                      <li>Annual Mean temp: </li>
-                    <li>Annual CO2-emission: </li> 
+                    <li id="CO2Data"></li> 
                     <li>Deforastion rate:</li>
                     <li>Species loss: </li>
                 </ul>
