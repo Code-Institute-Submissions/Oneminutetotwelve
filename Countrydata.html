@@ -20,32 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
        <!--styling-->    
      <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-<script type="text/javascript"> 
 
-
-        //fetch ("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=PRECIP_15&stationid=COOP:010008&units=metric&startdate=2010-05-01&enddate=2010-05-31", {headers: {token:"ZNAroWPgvHxWZgVgCKwDEVKranscBmau"}}
-        //)
-
-         fetch ("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?limit=50", {headers: {token:"ZNAroWPgvHxWZgVgCKwDEVKranscBmau"}})
-        
-
-        //datatypes/?datacategoryid=TEMP&limit=60&datasetsid=GSOY
-             .then(function (rspns) {
-                return rspns.json();
-            })
-            .then(function (Deforestdata) {
-                //appendageDeforestData(Deforestdata);
-            console.log(Deforestdata);
-            })
-            .catch(function (err3) {
-                console.log('error: ' + err3);
-            });
-
-       // let WorldDeforestData = document.getElementById("DeforestData").innerHTML = 'Procentage of natural forest area converted to other uses on annual basis' + '[ ' + Deforestdata[1][4].date + ' / World ]: ' + Deforestdata[1][4].value.toFixed(2) + '  %';
-
-
-
-</script>
 </head>
 <body>
 
@@ -61,41 +36,20 @@
     </div>
     </div>
     </header>
-<section class="text-center" id="main">
-    <div class="mainframe container">
+<section class="text-center" id="country_main">
+    <div class="country_mainframe container">
         <div class="row">
-            <div class="col-6 main_left">
-                <h1>Background</h1>
-                <p>
-                    warming, the 6 th mass extinction dsfgfasd
-                    AgdfagAgagasdg dasfgdag adsgd ag sdgf 
-                    Dsfag a adfg aGlobal adfg  dafg sdgfs asdfg 
-                    Asdd afg 
-                    Asdfd af  agasdfsadf  rrag a ag asdf 
-                    aagf as
-                    asdgf asdfa  
-                    E rarea a ag  a aretgf
-                </p>
-            </div>
+            <div class="col-6 country_main_left">
+              </div>
             <div class="col-1"></div>
-            <div class="col-4 main_right text-center" id="main_right">
+            <div class="col-4 country_main_right text-center" id="country_main_right">
+                <div id="map"></div>
             </div>
             <div class="col-1"></div>
               </div>
     </div>
-    <div class="container factsframe">
-        <div class="factsmain">
-                   <ul>
-                    <li id="Worldpop"> </li>
-                    <li id="ageData"></li>
-                    <li id="povertyData"></li>
-                 </ul>
-                 <ul>
-                     <li>Annual Mean temp: </li>
-                    <li id="CO2Data"></li> 
-                    <li id="DeforestData"></li>
-                    <li>Species loss: </li>
-                </ul>
+    <div class="container country_factsframe">
+        <div class="country_factsmain">
         </div>
     </div>
 </section>
@@ -112,8 +66,8 @@
     <div class="col-4 text-center">    
           <h1>Quick Links</h1>
              <ul>
-            <li>Home</li>
-            <li>Info/Country</li>
+            <li href="index.html">Home</li>
+            <li href="Countrydata.html">Info/Country</li>
             <li>Take Action</li>
         </ul>
     </div>
@@ -128,7 +82,51 @@
 </div>
 </div>
 </footer>
-<script src="assets/js/worldticker.js"> </script>
-    <script src="assets/js/worlddata.js"> </script>
+     
+     <script type="text/javascript"> 
+      
+      //googlemap functions
+
+       function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                
+                    lat: 46.619261,
+                    lng: -33.134766,
+                }
+            });
+                  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            var locations = [{
+                lat: 40.785091,
+                lng: -73.96285
+            }, {
+                lat: 41.084045,
+                lng: -73.874256
+            }, {
+                lat: 40.754932,
+                lng: -73.984016
+            }];
+
+            //javascripts function
+
+             var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+
+
+</script>
+ <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
+ 
 </body>
 </html>
