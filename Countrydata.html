@@ -111,7 +111,7 @@
 
             //javascripts function
 
-             var markers = locations.map(function(location, i) {
+             var markers = locations.map(function(location, i) {               
                 return new google.maps.Marker({
                     position: location,
                     label: labels[i % labels.length]
@@ -122,6 +122,22 @@
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
         }
+
+
+fetch("https://www.trackcorona.live/api/countries")
+          .then(function (res) {
+                return res.json();
+            })
+            .then(function (country) {
+               // appendageCountry(country);
+                console.log(country.data);
+            })
+            .catch(function (er) {
+                console.log('error: ' + er);
+            });
+           //   function appendageCountry(country) {
+        //let countryData = document.getElementById("country").innerHTML = 'Annual carbon dioxide emissions '+ '[ ' + country[1] + ' / World ]: ' + country[1] + '  Kilo tonnes';        
+       // }
 
 
 </script>

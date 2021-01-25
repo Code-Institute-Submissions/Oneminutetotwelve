@@ -26,20 +26,20 @@
         //fetch ("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=PRECIP_15&stationid=COOP:010008&units=metric&startdate=2010-05-01&enddate=2010-05-31", {headers: {token:"ZNAroWPgvHxWZgVgCKwDEVKranscBmau"}}
         //)
 
-         fetch ("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?limit=50", {headers: {token:"ZNAroWPgvHxWZgVgCKwDEVKranscBmau"}})
+        // fetch ("https://www.ncdc.noaa.gov/cdo-web/api/v2/data?limit=50", {headers: {token:"ZNAroWPgvHxWZgVgCKwDEVKranscBmau"}})
         
 
         //datatypes/?datacategoryid=TEMP&limit=60&datasetsid=GSOY
-             .then(function (rspns) {
-                return rspns.json();
-            })
-            .then(function (Deforestdata) {
+        //     .then(function (rspns) {
+          //      return rspns.json();
+            //})
+            //.then(function (Deforestdata) {
                 //appendageDeforestData(Deforestdata);
-            console.log(Deforestdata);
-            })
-            .catch(function (err3) {
-                console.log('error: ' + err3);
-            });
+            //console.log(Deforestdata);
+           // })
+            // .catch(function (err3) {
+              //  console.log('error: ' + err3);
+            //});
 
        // let WorldDeforestData = document.getElementById("DeforestData").innerHTML = 'Procentage of natural forest area converted to other uses on annual basis' + '[ ' + Deforestdata[1][4].date + ' / World ]: ' + Deforestdata[1][4].value.toFixed(2) + '  %';
 
