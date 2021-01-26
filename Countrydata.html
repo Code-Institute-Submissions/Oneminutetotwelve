@@ -84,65 +84,25 @@
 </footer>
      
      <script type="text/javascript"> 
-      
-      //googlemap functions
-
-       function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
-                center: {
-                
-                    lat: 46.619261,
-                    lng: -33.134766,
-                }
-            });
-                  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-
-            var locations = [{
-                lat: 40.785091,
-                lng: -73.96285
-            }, {
-                lat: 41.084045,
-                lng: -73.874256
-            }, {
-                lat: 40.754932,
-                lng: -73.984016
-            }];
-
-            //javascripts function
-
-             var markers = locations.map(function(location, i) {               
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-        }
-
-
-fetch("https://www.trackcorona.live/api/countries")
+     let locations =[];
+     fetch("https://www.trackcorona.live/api/countries")
           .then(function (res) {
                 return res.json();
             })
             .then(function (country) {
-               // appendageCountry(country);
-                console.log(country.data);
-            })
+                let i = 0;
+                let len = country.data.length;
+                for (i = 0; i < len; i++){
+                  //labels.push([country.data[i].location]); 
+                  locations.push([country.data[i].location,country.data[i].latitude, country.data[i].longitude]);
+                 }
+                }) //console.log(xlocations);
             .catch(function (er) {
                 console.log('error: ' + er);
             });
-           //   function appendageCountry(country) {
-        //let countryData = document.getElementById("country").innerHTML = 'Annual carbon dioxide emissions '+ '[ ' + country[1] + ' / World ]: ' + country[1] + '  Kilo tonnes';        
-       // }
-
+console.log(locations);
 
 </script>
- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
- 
+
 </body>
 </html>
