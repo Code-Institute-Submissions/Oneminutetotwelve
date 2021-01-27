@@ -84,7 +84,8 @@
 </footer>
      
      <script type="text/javascript"> 
-     let locations =[];
+    let locations=[];
+
      fetch("https://www.trackcorona.live/api/countries")
           .then(function (res) {
                 return res.json();
@@ -94,13 +95,14 @@
                 let len = country.data.length;
                 for (i = 0; i < len; i++){
                   //labels.push([country.data[i].location]); 
-                  locations.push([country.data[i].location,country.data[i].latitude, country.data[i].longitude]);
-                 }
+                  locations.push({"country":country.data[i].location, "lat":country.data[i].latitude, "long":country.data[i].longitude});
+                }   
                 }) //console.log(xlocations);
             .catch(function (er) {
                 console.log('error: ' + er);
             });
-console.log(locations);
+            
+console.log(typeof(locations));
 
 </script>
 
