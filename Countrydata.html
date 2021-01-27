@@ -39,13 +39,9 @@
 <section class="text-center" id="country_main">
     <div class="country_mainframe container">
         <div class="row">
-            <div class="col-6 country_main_left">
-              </div>
-            <div class="col-1"></div>
-            <div class="col-4 country_main_right text-center" id="country_main_right">
+            <div class="col-12 country_main_right text-center" id="country_main_right">
                 <div id="map"></div>
             </div>
-            <div class="col-1"></div>
               </div>
     </div>
     <div class="container country_factsframe">
@@ -84,6 +80,8 @@
 </footer>
      
      <script type="text/javascript"> 
+
+
     let locations=[];
 
      fetch("https://www.trackcorona.live/api/countries")
@@ -94,17 +92,42 @@
                 let i = 0;
                 let len = country.data.length;
                 for (i = 0; i < len; i++){
-                  //labels.push([country.data[i].location]); 
                   locations.push({"country":country.data[i].location, "lat":country.data[i].latitude, "long":country.data[i].longitude});
-                }   
-                }) //console.log(xlocations);
+                } 
+    
+                //Init map
+        })
             .catch(function (er) {
                 console.log('error: ' + er);
-            });
-            
-console.log(typeof(locations));
+            })
 
+                            function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 3,
+    center: { lat: -28.024, lng: 140.887 },
+  })
+ var infowindow = new google.maps.InfoWindow;
+
+    var marker, a;
+
+    for (a = 0; a < locations.length; a++) {  
+        marker = new google.maps.Marker({
+             position: new google.maps.LatLng(locations[a].lat, locations[a].long),
+             map: map
+        })
+
+      google.maps.event.addListener(marker, 'click', (function(marker, a) {
+             return function() {
+                 infowindow.setContent(locations[a].country);
+                 infowindow.open(map, marker);
+             }
+        })(marker, a))
+    } 
+    }
 </script>
+ <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
+
 
 </body>
 </html>

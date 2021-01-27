@@ -86,7 +86,7 @@ text-shadow: 1px solid black;
 #country_main_right {
     border: black solid 6px;
     border-radius: 50%;
-    min-height: 360px;
+    height: 600px;
 }
 
 #map{
