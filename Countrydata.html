@@ -78,56 +78,52 @@
 </div>
 </div>
 </footer>
-     
-     <script type="text/javascript"> 
+<script type="text/javascript">  
 
+let locations=[];
 
-    let locations=[];
+let countries, pop 
 
-     fetch("https://www.trackcorona.live/api/countries")
-          .then(function (res) {
-                return res.json();
-            })
-            .then(function (country) {
-                let i = 0;
-                let len = country.data.length;
-                for (i = 0; i < len; i++){
-                  locations.push({"country":country.data[i].location, "lat":country.data[i].latitude, "long":country.data[i].longitude});
-                } 
+fetch("https://www.trackcorona.live/api/countries")
+.then(function (response) {
+    return response.json();
+    })
+.then(function (dataCountry) {
+    countries = dataCountry;
+    return fetch ('https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL/?format=json&date=2010:2020&per_page=5000')
+})
+.then(function (response) {
+    return response.json();
+    })
     
-                //Init map
-        })
-            .catch(function (er) {
-                console.log('error: ' + er);
-            })
+.then(function (dataPop) {
+        pop = dataPop;
 
-                            function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-    center: { lat: -28.024, lng: 140.887 },
-  })
- var infowindow = new google.maps.InfoWindow;
+        console.log(pop, countries);
+        console.log(countries.data[1].location)
+        let length = pop[1].length;
+        i=0;
 
-    var marker, a;
+        let len = countries.data.length;
 
-    for (a = 0; a < locations.length; a++) {  
-        marker = new google.maps.Marker({
-             position: new google.maps.LatLng(locations[a].lat, locations[a].long),
-             map: map
-        })
+        for (i = 0; i < len; i++){
+        if (pop[1][i].country.value == countries.data[i].location){
+        locations.push({"pop":(pop[1][i].value/1000000000).toFixed(2)});
 
-      google.maps.event.addListener(marker, 'click', (function(marker, a) {
-             return function() {
-                 infowindow.setContent(locations[a].country);
-                 infowindow.open(map, marker);
-             }
-        })(marker, a))
-    } 
+    
+        }
+        }
+    })
+.catch(function (error) {
+		// if there's an error, log it
+		console.log(error);
     }
+);
+
+  console.log(locations);
 </script>
- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
-
-
+<!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
+-->
 </body>
 </html>
