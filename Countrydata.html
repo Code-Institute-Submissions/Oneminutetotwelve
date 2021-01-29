@@ -82,6 +82,8 @@
 
 let pushstep1=[];
 let pushstep2=[];
+let pushstep3=[];
+let pushstep4=[];
 let locations=[];
 
 let countries, pop 
@@ -149,15 +151,100 @@ fetch("https://www.trackcorona.live/api/countries")
    //  console.log(pushstep2);
     
     })
-.catch(function (error) {
+    .then(function (dataPov) {
+    poverty = dataPov;
+    return fetch ('https://api.worldbank.org/v2/en/country/all/indicator/SI.POV.DDAY?format=json&per_page=3000&source=2&date=2010:2020')
+})
+.then(function (response) {
+    return response.json();
+    })
+    
+.then(function (datapoverty) {
+        povert = datapoverty;
+
+      console.log(povert);
+       //console.log(countries.data[1].location)
+        let length = povert[1].length;
+         let lngth2 = pushstep2.length;
+        i=0;
+        c=0;
+
+         for (i = 0; i < length; i++){
+             for (c = 0; c < lngth2; c++ ) {
+        if (povert[1][i].country.value === pushstep2[c].country){
+        if (povert[1][i].date === "2018"){
+        pushstep3.push({"country":pushstep1[c].country, "lat":pushstep1[c].lat, "long":pushstep1[c].long,"pop":pushstep1[c].pop, "lifeexp":age[1][i].value, "poverty": povert[1][i].value});
+         }
+        }
+       }
+    }
+    // console.log(pushstep3);
+        })
+         .then(function (dataCO2) {
+    dCO2 = dataCO2;
+    return fetch ('https://api.worldbank.org/v2/en/country/all/indicator/EN.ATM.CO2E.KT?format=json&per_page=20000&source=2')
+})
+.then(function (response) {
+    return response.json();
+    })
+    
+.then(function (dataco2) {
+        CO2 = dataco2;
+
+      console.log(CO2);
+       //console.log(countries.data[1].location)
+        let length = CO2[1].length;
+         let lngth3 = pushstep3.length;
+        i=0;
+        c=0;
+
+         for (i = 0; i < length; i++){
+             for (c = 0; c < lngth3; c++ ) {
+        if (CO2[1][i].country.value === pushstep3[c].country){
+        if (CO2[1][i].date === "2016"){
+       locations.push({"country":pushstep3[c].country, "lat":pushstep3[c].lat, "long":pushstep3[c].long,"pop":pushstep3[c].pop, "lifeexp":pushstep3[c].lifeexp, "poverty": pushstep3[c].poverty, "CO2":CO2[1][i].value });
+         }
+        }
+       }
+    }
+     //console.log(locations);
+        })
+  .then(
+ function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 3,
+    center: { lat: -28.024, lng: 140.887 },
+  })
+ var infowindow = new google.maps.InfoWindow;
+
+    var marker, a;
+
+    for (a = 0; a < locations.length; a++) {  
+        marker = new google.maps.Marker({
+             position: new google.maps.LatLng(locations[a].lat, locations[a].long),
+             map: map
+        })
+
+      google.maps.event.addListener(marker, 'click', (function(marker, a) {
+             return function() {
+                 infowindow.setContent(locations[a].country + "\n --- Population: " + locations[a].pop + " million " + "\n --- Life Expectancy: " + locations[a].lifeexp + "\n --- Living on under 1.9$/day: " + locations[a].poverty + " % \n --- Annual CO2-emission: " + locations[a].CO2 + " Kilo tonnes ");
+                 infowindow.open(map, marker);
+             }
+        })(marker, a))
+    } 
+   
+})      
+
+ //locations.push({"country":pushstep3[c].country, "lat":pushstep3[c].lat, "long":pushstep3[c].long,"pop":pushstep3[c].pop, "lifeexp":pushstep3[c].lifeexp, "poverty": pushstep3[c].poverty, "CO2":CO2[1][i].value });
+ .catch(function (error) {
 		// if there's an error, log it
 		console.log(error);
     }
 );
 
+
 </script>
-<!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
--->
 </body>
 </html>
