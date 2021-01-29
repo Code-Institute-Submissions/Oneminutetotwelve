@@ -80,7 +80,7 @@
 </footer>
 <script type="text/javascript">  
 
-let locations=[];
+let pushstep1=[];
 
 let countries, pop 
 
@@ -99,20 +99,24 @@ fetch("https://www.trackcorona.live/api/countries")
 .then(function (dataPop) {
         pop = dataPop;
 
-        console.log(pop, countries);
-        console.log(countries.data[1].location)
+       console.log(pop);
+       // console.log(countries.data[1].location)
         let length = pop[1].length;
-        i=0;
-
         let len = countries.data.length;
+        i=0;
+        e=0;
 
-        for (i = 0; i < len; i++){
-        if (pop[1][i].country.value == countries.data[i].location){
-        locations.push({"pop":(pop[1][i].value/1000000000).toFixed(2)});
-
-    
+           for (i = 0; i < length; i++){
+             for (e = 0; e < len; e++ ) {
+        if (pop[1][i].country.value === countries.data[e].location){
+        if (pop[1][i].date === "2018"){
+        pushstep1.push({"country":countries.data[e].location, "lat":countries.data[e].latitude, "long":countries.data[e].longitude,"pop":(pop[1][i].value/1000000).toFixed(2)});
         }
         }
+       }
+        }
+        
+  console.log(pushstep1);
     })
 .catch(function (error) {
 		// if there's an error, log it
@@ -120,7 +124,6 @@ fetch("https://www.trackcorona.live/api/countries")
     }
 );
 
-  console.log(locations);
 </script>
 <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
