@@ -22,7 +22,7 @@
      <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 
 </head>
-<body>
+<body id="CountrydataPage">
 
     <header>
         <div class="container text-center">
@@ -39,7 +39,8 @@
 <section class="text-center" id="country_main">
     <div class="country_mainframe container">
         <div class="row">
-            <div class="col-12 country_main_right text-center" id="country_main_right">
+            <div class="col-12 text-center Title"><p> World map with information on country level</p></div>
+            <div class="col-12 country_main text-center" id="country_main_right">
                 <div id="map"></div>
             </div>
               </div>
@@ -246,5 +247,6 @@ fetch("https://www.trackcorona.live/api/countries")
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
+
 </body>
 </html>

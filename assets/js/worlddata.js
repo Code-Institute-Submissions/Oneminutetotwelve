@@ -14,7 +14,7 @@ fetch('https://api.worldbank.org/v2/country/1W/indicator/SP.POP.TOTL/?format=jso
             sumWorldPop = 0;
 
      function appendpopData(popdata) {
-            document.getElementById("Worldpop").innerHTML = 'World population' + ' [ ' + popdata[1][1].date + ' ]: ' + (popdata[1][1].value/1000000000).toFixed(2) + '  billion people';
+            document.getElementById("Worldpop").innerHTML = (popdata[1][1].value/1000000000).toFixed(2) + '  billion people ';
        }
 
 // Worldbank input mean world mean life expectence
@@ -31,7 +31,7 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
             });
 
         function appendageData(agedata) {
-        document.getElementById("ageData").innerHTML = 'Mean life expectence' + ' [ ' + agedata[1][2].date + ' / World ]: ' + agedata[1][2].value.toFixed(1) + '  year';
+        document.getElementById("ageData").innerHTML =  agedata[1][2].value.toFixed(1) ;
         }
 
         // Worldbank input procentage of world people living on less 1.9$ a day
@@ -48,7 +48,7 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
             });
 
         function appendagePovertyData(povertydata) {
-         document.getElementById("povertyData").innerHTML = 'Poverty headcount ratio at $1.90 a day (% of population)' + ' [ ' + povertydata[1][3].date + ' / World ]: ' + povertydata[1][3].value.toFixed(2) + '  %';
+         document.getElementById("povertyData").innerHTML =  povertydata[1][3].value.toFixed(2);
         }
 
 
