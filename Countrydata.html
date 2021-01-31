@@ -18,7 +18,11 @@
         <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-       <!--styling-->    
+<!--- Font Awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      
+
+<!--styling-->    
      <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 
 </head>
@@ -213,17 +217,71 @@ fetch("https://www.trackcorona.live/api/countries")
   .then(
  function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-    center: { lat: -28.024, lng: 140.887 },
-  })
+    zoom: 2,
+    minZoom:2,
+    center: { lat: 20, lng: 0 },
+   styles:  [
+      {
+        featureType: "all",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#b6af95" }],
+   }, 
+   {
+        featureType: "administrative.locality",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#b6af95" }],
+   },
+       {
+        featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#2a4966" }],
+   },{
+        featureType: "administrative.land_parcel",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#a8aaa8" }]},
+        {
+        featureType: "landscape.natural.landcover",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#bebdb3" }]}
+        ,{
+        featureType: "administrative.land_parcel",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#a8aaa8" }]},
+        {
+        featureType: "landscape.natural.terrain",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#b6ad8d" }]},
+          {
+        featureType: "landscape.man_made",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#575149" }]},
+         {
+        featureType: "poi.park",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#bacf7a" }]},
+         {
+        featureType: "road",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#562b07" }]},
+          {
+        featureType: "transit",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#d98910" }]},
+        
+
+  ]})
  var infowindow = new google.maps.InfoWindow;
 
-    var marker, a;
+
+ var marker, a;
+
+var image = window.FontAwesome.icon({  prefix: 'fas', iconName: 'fa-map-pin' })
 
     for (a = 0; a < locations.length; a++) {  
         marker = new google.maps.Marker({
              position: new google.maps.LatLng(locations[a].lat, locations[a].long),
-             map: map
+             map: map,
+             icon: image,
         })
 
       google.maps.event.addListener(marker, 'click', (function(marker, a) {
@@ -245,6 +303,7 @@ fetch("https://www.trackcorona.live/api/countries")
 
 
 </script>
+<script src="assets/js/fontawesome.js"> </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
 

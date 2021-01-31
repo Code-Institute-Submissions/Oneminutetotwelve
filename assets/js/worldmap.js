@@ -21,7 +21,12 @@
  function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
-    center: { lat: -28.024, lng: 140.887 },
+    center: { lat: 0, lng: 0 },
+      styles: [
+         featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#b7c6db" }],
+      }, ],
   })
  var infowindow = new google.maps.InfoWindow;
 

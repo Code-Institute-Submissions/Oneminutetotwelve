@@ -67,7 +67,7 @@ text-shadow: 1px solid black;
 
 .Title p, .Title p a{
      font-family: "Titillium", sans-serif;
-   color: white;
+   color: #9aceec;
    text-shadow: black 2px solid;
       font-size: 32px;
     font-weight: 600;    
@@ -75,7 +75,7 @@ text-shadow: 1px solid black;
 
 .Title p a:hover{
      font-family: "Titillium", sans-serif;
-     color: gray;
+     color: lightgray;
      text-decoration: none;
       font-size: 32px;
     font-weight: 600;    
@@ -97,9 +97,26 @@ text-shadow: 1px solid black;
 .factsmain p{
     margin-top: 20px;
     font-family: "Titillium", sans-serif;
-    color:#faf5f5;
+    color:#c7deec;
    font-size: 20px;
     font-weight: 400; 
+}
+
+.factsmain p a{
+    margin-top: 20px;
+    font-family: "Titillium", sans-serif;
+    color:#d12412;
+   font-size: 20px;
+    font-weight: 700; 
+}
+
+.factsmain p a:hover{
+    margin-top: 20px;
+    font-family: "Titillium", sans-serif;
+    text-decoration: none;
+    color:lightgray;
+   font-size: 20px;
+    font-weight: 500; 
 }
 
 .main_left h1{
