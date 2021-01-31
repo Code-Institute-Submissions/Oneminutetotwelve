@@ -35,7 +35,7 @@
         <ul class="list-inline">
             <li class="list-inline-item"> <a href="index.html">Home</a></li>
             <li class="list-inline-item"> <a href="Countrydata.html">Info/Country</a></li>
-            <li class="list-inline-item"><a>Take Action</a></li>
+            <li class="list-inline-item"><a href="temporary.html"> Take Action</a></li>
         </ul>
     </div>
     </div>
@@ -85,7 +85,8 @@
 </footer>
 <script type="text/javascript">  
 
-let pushstep1=[];
+
+ let pushstep1=[];
 let pushstep2=[];
 let pushstep3=[];
 let pushstep4=[];
@@ -275,18 +276,27 @@ fetch("https://www.trackcorona.live/api/countries")
 
  var marker, a;
 
-var image = window.FontAwesome.icon({  prefix: 'fas', iconName: 'fa-map-pin' })
+ const image = {
+    url: "assets/img/map-pin-solid.svg",
+       scaledSize: new google.maps.Size(27, 27),
+    
+   };
+
+
+
 
     for (a = 0; a < locations.length; a++) {  
-        marker = new google.maps.Marker({
-             position: new google.maps.LatLng(locations[a].lat, locations[a].long),
+           marker = new google.maps.Marker({
+                         position: new google.maps.LatLng(locations[a].lat, locations[a].long),
              map: map,
              icon: image,
-        })
+                    })
 
-      google.maps.event.addListener(marker, 'click', (function(marker, a) {
+    
+
+      google.maps.event.addListener(marker, 'click', (function(marker, a, image) {
              return function() {
-                 infowindow.setContent(locations[a].country + "\n --- Population: " + locations[a].pop + " million " + "\n --- Life Expectancy: " + locations[a].lifeexp + "\n --- Living on under 1.9$/day: " + locations[a].poverty + " % \n --- Annual CO2-emission: " + locations[a].CO2 + " Kilo tonnes ");
+                 infowindow.setContent('<div class="map-info-window">'+ '<h1>'+ locations[a].country + '<h1>'+'<p>' + 'Population: ' + locations[a].pop + ' million ' +'</p>' + '<p>' + 'Life Expectancy: ' + locations[a].lifeexp + '<p>' + 'Living on under 1.9$/day: ' + locations[a].poverty + ' %'  +'</p>' + '<p>' + ' Annual CO2-emission: ' + locations[a].CO2 + ' Kilo tonnes ' + '</div>');
                  infowindow.open(map, marker);
              }
         })(marker, a))
@@ -303,9 +313,7 @@ var image = window.FontAwesome.icon({  prefix: 'fas', iconName: 'fa-map-pin' })
 
 
 </script>
-<script src="assets/js/fontawesome.js"> </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzcqy8wuUG_M_fC8xcJt7eRV0aqD4-Un4&callback=initMap"></script>
-
 </body>
 </html>
