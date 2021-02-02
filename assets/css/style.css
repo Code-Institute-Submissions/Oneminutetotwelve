@@ -102,20 +102,6 @@ text-shadow: 1px solid black;
     font-weight: 400; 
 }
 
-.factSection{
-    background-image:url("../img/pexels-atiabii-3166780.jpg");
-     background-position: center;
-    background-size: 1000px 900px;
-    background-repeat: no-repeat;
-    background-color: #06131c;
-    height:800px;
-    padding-top: 560px;
-     font-family: "Titillium", sans-serif;
-    color:#e1e1ae;
-    text-shadow: 4px #eacacb solid;
-   font-size: 28px;
-    font-weight: 400; 
-}
 
 .factsmain p a{
     margin-top: 20px;
@@ -178,6 +164,7 @@ text-shadow: 1px solid black;
     color:black;
     margin-bottom: 10px;
 }
+
 .factsmain ul{
     list-style-type: none;
     font-family: "Titillium", sans-serif;
@@ -190,6 +177,50 @@ text-shadow: 1px solid black;
     display: inline-block;
 }
 
+
+.factSection{
+    background-image:url("../img/pexels-atiabii-3166780.jpg");
+     background-position: center;
+    background-size: 500px 700px;
+    background-repeat: no-repeat;
+    background-color: #06131c;
+    height:600px;
+    }
+
+
+.factSection p {
+padding-top: 420px;
+     font-family: "Titillium", sans-serif;
+    color:#e1e1ae;
+    text-shadow: 4px #eacacb solid;
+   font-size: 24px;
+    font-weight: 400; 
+}
+
+.topsegment{
+    height:40px;
+       background-color: #06131c;
+}
+
+.panel{
+    height:120px;
+    padding-top: 20px;
+       background-color: #06131c;
+}
+
+.panel ul li{
+       padding: 20px 20px 0px 20px;
+    color: white;
+    display:inline;
+list-style-type: none;
+   font-size: 38px;
+
+}
+
+#main{
+    background-image: "#";
+    background-size: cover;
+}
 
 /* Footer */
 
