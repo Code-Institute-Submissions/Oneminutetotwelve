@@ -5,10 +5,10 @@
 /* Test temperary*/
 
 header{
-    height:300px;
+    height:450px;
         background-color: #000000;
-        background-image:  url("../img/klipartz.com_stormcloud.png"); 
-           background-size: 100% 300px;
+        background-image:  url("../img/klipartz.com_watersurface.png"); 
+           background-size: 1200px 400px;
              background-position: center;
         background-repeat: no-repeat;
  
@@ -21,16 +21,17 @@ header{
 
 
 footer{
-     height:800px;
+     height:600px;
         background-color: #000000;
-        background-size: 100% 100%;
+        background-size: 1200px 400px;
+         background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
      background-image: url("../img/klipartz.com (6)_iceberg.png");
 }
 
 .footertext{
-    padding-top:500px;
+    padding-top:400px;
 }
 
 #testmain{
@@ -70,8 +71,8 @@ footer{
 
 
 .factSection{
-     margin-top: 50px;
-     border: 3px solid gray;
+    margin-top: 80px;
+    /* border: 3px solid gray; */
  border-radius:5%;
 }
 

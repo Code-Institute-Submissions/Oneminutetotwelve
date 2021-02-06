@@ -127,10 +127,9 @@ let smoker = document.querySelector(".test1Frame");
 let firer = document.querySelector(".test2Frame");
 let glober = document.querySelector(".earth");
 
+let myVar;
 
 let  playfunction = play.addEventListener("click", function() {
-
-//function changeImage() {
     textframe.innerHTML = text[i];
      factframe.src = images[i];
   
@@ -139,9 +138,7 @@ let  playfunction = play.addEventListener("click", function() {
     } else {
         i = 0;
     }
-
 })
-
 
 
 let  globefunction = burningglobe.addEventListener('mouseover', function(){
