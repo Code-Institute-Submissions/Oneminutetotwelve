@@ -1,43 +1,155 @@
 /* Fontstyle */
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&family=Roboto:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;0,600;1,300;1,400&family=Crete+Round:ital@0;1&family=Neucha&family=Playfair+Display:wght@400;500;700&family=Lexend+Mega&family=Open+Sans:wght@300;400&family=Rubik:ital@0;1&display&display=swap');
+
+/* Test temperary*/
+
+header{
+    height:300px;
+        background-color: #000000;
+        background-image:  url("../img/klipartz.com_stormcloud.png"); 
+           background-size: 100% 300px;
+             background-position: center;
+        background-repeat: no-repeat;
+ 
+}
+
+.logo{
+     padding-top:60px;
+}
+
+
+
+footer{
+     height:800px;
+        background-color: #000000;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+     border-bottom: #c7deec 12px 12px;
+     background-image: url("../img/klipartz.com (6)_iceberg.png");
+}
+
+.footertext{
+    padding-top:500px;
+}
+
+#testmain{
+    background-color: #000000;
+}
+
+.panel{
+    height:60px;
+    padding-top: 0px;
+      /* background-color: #06131c;*/
+}
+
+.earth{
+    height:800px;
+    background-image: url("../img/pexels-pixabay-355935.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+
+   .upperwrapper{
+       background-color: #191919;
+   }
+   
+.test1Frame{
+     height:500px; 
+     color:white;
+   padding-top:0;
+   background-color: #050506;
+        background-image: url("../img/klipartz.com_smoke.png");
+     background-size: 400px 400px;
+    opacity:0.6; 
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+
+
+.factSection{
+     margin-top: 50px;
+     border: 3px solid gray;
+ border-radius:5%;
+}
+
+
+.factText  {
+    margin-top: 60px;
+        font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 20px;
+       }
+
+.factText a:hover{
+    color:darkgray;
+     font-size: 22px;
+     text-decoration: none;
+}
+ 
+.factText a{
+    color: #c7deec;
+     font-size: 22px;
+      text-decoration: none;
+}
+
+.test2Frame{
+   height:500px; 
+   background-color: #050506;
+        background-image: url("../img/klipartz.com (4)_fire.png");
+     background-size: 300px 400px;
+    opacity:0.6; 
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+  .testbottom{
+      height:200px;
+  }
 
 /* Body */
 
-/*#Indexpage{
-    background-image: url("../img/pexels-pixabay-60013.jpg");
-    background-position: center;
+#Indexpage{
+ /*background-image: url("../img/pexels-francesco-ungaro-998641.jpg");*/
+     background-position: center;
     background-size: cover;
-   }*/
+    background-color:#10171a;
+   }
 
    
 #CountrydataPage{
-    background-image: url("../img/pexels-francesco-ungaro-998641.jpg");
+   /* background-image: url("../img/pexels-francesco-ungaro-998641.jpg");*/
+    background-color: #000000;
     background-position: center;
     background-size: cover;
    }
 
 /* Header */
 
-Header {
+/*Header {
     padding: 40px 0px 0px 0;
-    background-color: black;
-}
+    /*background-color: black;
+    background-size: cover;
+} */
 
 .logo p{
-    font-family: "Roboto", sans-serif;
-     color:#e8e6e1;
-    font-size: 48px;
+       font-family: "Tillium", sans-serif;
+     color:#6b91a4;
+     text-shadow: 3px 3px #1c1e22;
+    font-size: 52px;
     font-weight: 600;
 }
 
 .nav{
-    color:#e8e6e1;
-    font-family: "Roboto", sans-serif;
+    color:#d2c9c1;
+    font-family: "Open Sans", sans-serif;
     font-size: 22px;
-    font-weight: 500; 
+    font-weight: 700; 
     justify-content: center;
   }
+ 
 
 .nav ul{
        list-style-type: none;
@@ -45,6 +157,16 @@ Header {
       }
 .nav li{
     margin: 0 28px 0 28px;
+}
+
+.nav li a{
+    color:#001f45;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color:#6b91a4;
+    text-decoration: none;
 }
 
 /* Main Section */
@@ -85,12 +207,12 @@ text-shadow: 1px solid black;
     margin-bottom: 40px; 
     border: 3px solid #0c0401;
     background-color: #33352d; 
-    opacity: 0.9;
+   /* opacity: 0.9;*/
 
 }
 
 .factsmain{
-    opacity: 0.1;
+   /* opacity: 0.1;*/
    height: 200px; 
        }
 
@@ -154,13 +276,14 @@ text-shadow: 1px solid black;
 
 #map{
   height: 500px; 
-  border: 6px solid darkgray;  
+  border: 6px solid #e6e6e6;  
+  border-radius: 2%;
 }
 
 .factsmain{
     margin:10px 0px 0px 0px;
     padding: 0px 10px 0px 10px;;
-    opacity: 100%;
+   /* opacity: 100%*/;
     color:black;
     margin-bottom: 10px;
 }
@@ -178,35 +301,35 @@ text-shadow: 1px solid black;
 }
 
 
-.factSection{
+/*.factSection{
     background-image:url("../img/pexels-atiabii-3166780.jpg");
+    border:8px solid #c0c0c0;
      background-position: center;
-    background-size: 500px 700px;
+    background-size: 350px 400px;
     background-repeat: no-repeat;
-    background-color: #06131c;
-    height:600px;
-    }
+   /* background-color: #06131c;
+   margin-top:10px;
+   
+    height:430px;
+    }*/
 
-
-.factSection p {
-padding-top: 420px;
-     font-family: "Titillium", sans-serif;
-    color:#e1e1ae;
-    text-shadow: 4px #eacacb solid;
-   font-size: 24px;
-    font-weight: 400; 
-}
+/*.factText  {
+padding-top: 80px;
+     font-family: "Neucha", sans-serif;
+    color: #ecdecf;
+    font-size: 26px;
+ }*/
 
 .topsegment{
     height:40px;
-       background-color: #06131c;
+       /*background-color: #06131c;*/
 }
 
-.panel{
-    height:120px;
-    padding-top: 20px;
-       background-color: #06131c;
-}
+/*.panel{
+    height:80px;
+    padding-top: 300px;
+      /* background-color: #06131c;
+}*/
 
 .panel ul li{
        padding: 20px 20px 0px 20px;
@@ -217,16 +340,18 @@ list-style-type: none;
 
 }
 
-#main{
-    background-image: "#";
-    background-size: cover;
-}
+#main {
+    height:800px;
+    background-image: url("../img/pexels-pixabay-60013.jpg");
+    background-size: 100% 100%;
+   /* opacity:0.9;
+*/}
 
 /* Footer */
 
 footer{
-    color: black;
-    background-color: white;
+    color: #fffded;
+   /* background-color: white; */
 }
 
 .footerframe h1{
