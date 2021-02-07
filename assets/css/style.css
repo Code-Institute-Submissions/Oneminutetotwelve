@@ -4,9 +4,33 @@
 
 /* Test temperary*/
 
+.info1,.info3, .info5, .info7, .info9{
+     padding-top:400px;
+   height:1200px; 
+}
 
+.info2t, .info3t,.info4t,.info5t,.info6t,.info7t,.info8t,.info9t{
+    height:1200px;
+    position: fixed;
+    text-align: center;
+    top: 20vh;
+    left: 20vw;
+    right: 20vw;
+    z-index: 2;
+    display:none;
+ }
 
-.info1 p,.info2 p, .info3 p, .info4 p, .info5 p, .info6 p, .info7 p, .info8 p, .info9 p{
+.sticky{
+    display: block !important;
+}
+
+.info3 p{
+    position: fixed;
+    top: 1500px;
+    z-index: -2;
+}
+
+.info1 p, .info2t p, .info3t p, .info4t p, .info5t p, .info6t p, .info7t p, .info8t p, .info9t p{
  color:white;
  padding-top: 100px;
   font-family: "Tillium", sans-serif;
@@ -16,38 +40,29 @@
 
 
 
-.info2 p a, .info3 p a, .info4 p a,.info5 p a, .info6 p a, .info7 p a, .info8 p a, .info9 p a{
+.info2t p a, .info3t p a, .info4t p a,.info5t p a, .info6t p a, .info7t p a, .info8t p a, .info9t p a{
     color:#c7deec;
     text-decoration: none;
 }
 
-.info2 p a:hover, .info3 p a:hover, .info4 p a:hover,  .info5 p a:hover, .info6 p a:hover, .info7 p a:hover, .info8 p a:hover, .info9 p a:hover{
+.info2t p a:hover, .info3t p a:hover, .info4t p a:hover,  .info5t p a:hover, .info6t p a:hover, .info7t p a:hover, .info8t p a:hover, .info9t p a:hover{
    color:darkgray;
      font-size: 38px;
      text-decoration: none;
 }
 
 .info2{
-   margin-top:800px;
-     height:900px;
+     height:1200px;
      background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); 
-     background-size: 100%; 
+     background-size: 100vw 80vw; 
       background-position: center;
      background-repeat: no-repeat;
     }
 
-.info1,.info3, .info5, .info7{
-    padding-top:400px;
-    height:900px;
-}
 
-
-.info9{  padding-top:300px;
-    height:1200px;}
 
 .info4{
-       margin-top:800px;
-     height:900px;
+     height:1200px;
      background-image:  url("../img/pexels-tom-fisk-3186574.jpg"); 
      background-size: 100%; 
       background-position: center;
@@ -55,8 +70,7 @@
     }
 
     .info6{
-       margin-top:800px;
-     height:900px;
+     height:1200px;
      background-image:  url("../img/pexels-chris-leboutillier-929385.jpg"); 
      background-size: 100%; 
       background-position: center;
@@ -64,8 +78,7 @@
     }
 
    .info8{
-       margin-top:800px;
-     height:900px;
+     height:1200px;
      background-image:  url("../img/pexels-karolina-grabowska-4207908.jpg"); 
      background-size: 100%; 
       background-position: center;
@@ -92,12 +105,12 @@ footer{
     padding-top: 400px;
      height:900px;
      width: 100%;
-          background-size: 2600px 800px;
+          background-size: 100vw 40vw;
          background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
      background-image: url("../img/klipartz.com (6)_iceberg.png");
-          bottom: -300px;
+          bottom: -400px;
     position: fixed;
    
    } 
@@ -225,15 +238,15 @@ footer{
 /* Header */
 
 Header {
-    background-image: url("../img/klipartz.com_stormcloud.png");
-    height: 400px;
+    height: 20vh;
     width:100%;
     padding: 0px 0px 0px 0;
-    /*background-color: black;*/
-    background-size: 2600px 300px;
+    background-color: black;
     background-repeat: no-repeat;
+    background-position: 40vh;
          top:0;
     position: fixed;
+    
      } 
 
 .logo p{
