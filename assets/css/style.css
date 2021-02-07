@@ -4,11 +4,79 @@
 
 /* Test temperary*/
 
-header{
-    height:450px;
+
+
+.info1 p,.info2 p, .info3 p, .info4 p, .info5 p, .info6 p, .info7 p, .info8 p, .info9 p{
+ color:white;
+ padding-top: 100px;
+  font-family: "Tillium", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+
+
+.info2 p a, .info3 p a, .info4 p a,.info5 p a, .info6 p a, .info7 p a, .info8 p a, .info9 p a{
+    color:#c7deec;
+    text-decoration: none;
+}
+
+.info2 p a:hover, .info3 p a:hover, .info4 p a:hover,  .info5 p a:hover, .info6 p a:hover, .info7 p a:hover, .info8 p a:hover, .info9 p a:hover{
+   color:darkgray;
+     font-size: 38px;
+     text-decoration: none;
+}
+
+.info2{
+   margin-top:800px;
+     height:900px;
+     background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); 
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+.info1,.info3, .info5, .info7{
+    padding-top:400px;
+    height:900px;
+}
+
+
+.info9{  padding-top:300px;
+    height:1200px;}
+
+.info4{
+       margin-top:800px;
+     height:900px;
+     background-image:  url("../img/pexels-tom-fisk-3186574.jpg"); 
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+    .info6{
+       margin-top:800px;
+     height:900px;
+     background-image:  url("../img/pexels-chris-leboutillier-929385.jpg"); 
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+   .info8{
+       margin-top:800px;
+     height:900px;
+     background-image:  url("../img/pexels-karolina-grabowska-4207908.jpg"); 
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+#testheader{
+    height:200px;
         background-color: #000000;
         background-image:  url("../img/klipartz.com_watersurface.png"); 
-           background-size: 1200px 400px;
+           background-size: cover;
              background-position: center;
         background-repeat: no-repeat;
  
@@ -21,22 +89,23 @@ header{
 
 
 footer{
-     height:600px;
-        background-color: #000000;
-        background-size: 1200px 400px;
+    padding-top: 400px;
+     height:900px;
+     width: 100%;
+          background-size: 2600px 800px;
          background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
      background-image: url("../img/klipartz.com (6)_iceberg.png");
-}
-
-.footertext{
-    padding-top:400px;
-}
+          bottom: -300px;
+    position: fixed;
+   
+   } 
 
 #testmain{
     background-color: #000000;
-}
+    background-attachment: fixed; 
+  }
 
 .panel{
     height:60px;
@@ -50,7 +119,8 @@ footer{
     background-size: 500px 500px;
     background-repeat: no-repeat;
     background-position: center;
-   }
+
+}
 
    .upperwrapper{
        background-color: #191919;
@@ -66,6 +136,7 @@ footer{
     opacity:0.6; 
      background-position: center;
      background-repeat: no-repeat;
+     
 }
 
 
@@ -89,6 +160,10 @@ footer{
      font-size: 22px;
      text-decoration: none;
 }
+
+#testpage{
+     background-color: #050506;
+}
  
 .factText a{
     color: #c7deec;
@@ -104,6 +179,7 @@ footer{
     opacity:0.6; 
      background-position: center;
      background-repeat: no-repeat;
+       
 }
 
   .testbottom{
@@ -112,12 +188,31 @@ footer{
 
 /* Body */
 
-#Indexpage{
- /*background-image: url("../img/pexels-francesco-ungaro-998641.jpg");*/
+
+   #Indexpage{min-height: 500px;
+  background-image: url("../img/pexels-pixabay-60013.jpg");
      background-position: center;
     background-size: cover;
     background-color:#10171a;
-   }
+    background-attachment: fixed;}S
+
+/*#Indexpage{
+    min-height: 1000px;
+  background-image: url("../img/pexels-pixabay-60013.jpg");
+     background-position: center;
+    background-size: cover;
+    background-color:#10171a;
+    background-attachment: fixed;
+   }*/
+
+/*#main{
+   min-height: 500px;
+  background-image: url("../img/pexels-pixabay-60013.jpg");
+     background-position: center;
+    background-size: cover;
+    background-color:#10171a;
+    background-attachment: fixed;
+}*/
 
    
 #CountrydataPage{
@@ -129,11 +224,17 @@ footer{
 
 /* Header */
 
-/*Header {
-    padding: 40px 0px 0px 0;
-    /*background-color: black;
-    background-size: cover;
-} */
+Header {
+    background-image: url("../img/klipartz.com_stormcloud.png");
+    height: 400px;
+    width:100%;
+    padding: 0px 0px 0px 0;
+    /*background-color: black;*/
+    background-size: 2600px 300px;
+    background-repeat: no-repeat;
+         top:0;
+    position: fixed;
+     } 
 
 .logo p{
        font-family: "Tillium", sans-serif;
@@ -341,19 +442,19 @@ list-style-type: none;
 
 }
 
-#main {
+/*#main {
     height:800px;
     background-image: url("../img/pexels-pixabay-60013.jpg");
     background-size: 100% 100%;
-   /* opacity:0.9;
-*/}
+   opacity:0.9;
+}*/
 
 /* Footer */
 
-footer{
+/*footer{
     color: #fffded;
-   /* background-color: white; */
-}
+   background-color: white; 
+}*/
 
 .footerframe h1{
         padding: 20px 0px 0 0px;
