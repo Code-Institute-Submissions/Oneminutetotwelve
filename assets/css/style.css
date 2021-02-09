@@ -102,29 +102,53 @@
 
 
 footer{
-    padding-top: 450px;
-     height:900px;
+    padding-top: 100px;
+     height:300px;
      width: 100%;
           background-size: 2600px 300px;
          background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
      background-image: url("../img/klipartz.com (6)_iceberg.png");
-          bottom: -300px;
+          bottom: -50px;
     position: fixed;
    
    } 
+.abouttext p, .footerlinks li, .socialmedialinks li {
+    background-color: white;
+     opacity: 0.7;
+}
+
+   .abouttext p{
+          color:black;
+             font-size: 500;
+   }
+
+   .footerlinks li, .socialmedialinks li{
+          list-style-type: none;
+       text-decoration: none;
+    }
+
+      .footerlinks li a, .socialmedialinks li{
+      color:black;
+      font-size: 500;
+    }
+
+      .footerlinks li a:hover, .socialmedialinks li a:hover{
+          list-style-type: none;
+       text-decoration: none;
+       color:darkgray;
+   }
 
 #testmain{
     background-color: #000000;
-    height:1400px;
+    height:900px;
     background-attachment: fixed; 
   }
 
 .panel{
     height:60px;
     padding-top: 0px;
-      /* background-color: #06131c;*/
 }
 
 .earth{
@@ -157,17 +181,38 @@ footer{
 
 .factSection{
     margin-top: 80px;
-    /* border: 3px solid gray; */
  border-radius:5%;
 }
 
 
 .factText  {
-    margin-top: 60px;
+    padding-top: 180px;
         font-family: "Rubik", sans-serif;
-    color: white;
+    color: darkgray;
     font-size: 20px;
        }
+
+.links  {
+    padding-top: 240px;
+}
+
+.links ul{
+    list-style: none;
+}
+
+.links ul li a{
+           font-family: "Rubik", sans-serif;
+    color: darkgray;
+    font-size: 20px;
+     text-decoration: none;
+}
+
+.links ul li a:hover{
+           font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 20px;
+     text-decoration: none;
+}
 
 .factText a:hover{
     color:darkgray;
@@ -210,27 +255,10 @@ footer{
     background-color:#10171a;
     background-attachment: fixed;}S
 
-/*#Indexpage{
-    min-height: 1000px;
-  background-image: url("../img/pexels-pixabay-60013.jpg");
-     background-position: center;
-    background-size: cover;
-    background-color:#10171a;
-    background-attachment: fixed;
-   }*/
 
-/*#main{
-   min-height: 500px;
-  background-image: url("../img/pexels-pixabay-60013.jpg");
-     background-position: center;
-    background-size: cover;
-    background-color:#10171a;
-    background-attachment: fixed;
-}*/
 
    
 #CountrydataPage{
-   /* background-image: url("../img/pexels-francesco-ungaro-998641.jpg");*/
     background-color: #000000;
     background-position: center;
     background-size: cover;
@@ -347,12 +375,10 @@ text-shadow: 1px solid black;
     margin-bottom: 40px; 
     border: 3px solid #0c0401;
     background-color: #33352d; 
-   /* opacity: 0.9;*/
 
 }
 
 .factsmain{
-   /* opacity: 0.1;*/
    height: 200px; 
        }
 
@@ -419,7 +445,6 @@ text-shadow: 1px solid black;
 .factsmain{
     margin:10px 0px 0px 0px;
     padding: 0px 10px 0px 10px;;
-   /* opacity: 100%*/;
     color:black;
     margin-bottom: 10px;
 }
@@ -439,7 +464,6 @@ text-shadow: 1px solid black;
 
 .topsegment{
     height:40px;
-       /*background-color: #06131c;*/
 }
 
 
