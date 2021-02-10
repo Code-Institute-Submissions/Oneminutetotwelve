@@ -14,10 +14,10 @@
 /*Index page Header section*/
 
 #indexHeader {
-     height: 20vh;
+     height: 23vh;
     width:100%;
-    padding: 0px 0px 0px 0;
-    background-color: black;
+    background-size: 100%;
+    background-color: #212f2f;
     background-repeat: no-repeat;
     background-position: 40vh;
          top:0;
@@ -39,8 +39,37 @@
     font-weight: 600;
 }
 
+/* Header navbar Indexpage */
+
+.nav_index{
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+    justify-content: center;
+        padding-right: 5px;
+  }
+
+.nav_index ul{
+       list-style-type: none;
+       text-align: center;
+      }
+.nav_index li{
+    margin: 0 28px 0 28px;
+}
+
+.nav_index li a{
+    color:#72737b;
+    text-decoration: none;
+}
+
+.nav_index li a:hover{
+    color:#6b91a4;
+    text-decoration: none;
+}
+
+/* Header navbar in all pages except Indexpage */
+
 .nav{
-    color:#d2c9c1;
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     font-weight: 700; 
@@ -290,7 +319,7 @@ text-shadow: 1px solid black;
 /*Countrydata page mainSection Googlemap*/
 
 #map{
-  height: 350px; 
+  height: 300px; 
   border: 6px solid #e6e6e6;  
   border-radius: 2%;
 }
@@ -332,7 +361,6 @@ text-shadow: 1px solid black;
               background-size: 100vw 10vh;
     height: 25vh;
     width:100%;
-    padding: 0px 0px 0px 0;
     background-color: #030303;
     background-repeat: no-repeat;
   
@@ -344,7 +372,7 @@ text-shadow: 1px solid black;
 #aboutmain{
     background-color: #000000;
     height:900px;
-    background-attachment: fixed; 
+
   }
 
 
@@ -436,3 +464,72 @@ text-shadow: 1px solid black;
 
 
 /*Responsive actions */
+
+
+.menu_header {
+        position: fixed;
+        top: 3.4vh;
+        right:10vw;
+  opacity: 90%;
+}
+
+.dropdown-menu a {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.dropdown-menu a:hover {
+     color:#6b91a4;
+}
+
+@media screen and (max-width: 1050px) {
+
+    #indexHeader {
+        padding-top: 2vh;
+     height: 12vh;   
+     } 
+
+.logo p{
+    font-size: 22px;
+         text-shadow: 1px 1px #1c1e22;
+}
+
+
+.nav_index{
+    font-size: 18px;
+    font-weight: 700; 
+  }
+
+  .nav_index li{
+    margin: 0 8px 0 8px;
+}
+
+.info1 p, .info2t p, .info3t p,.info4t p, .info5t p,.info6t p, .info7t p,.info8t p, .info9t p{
+    font-size:14px;
+     padding-top: 10px;
+
+}
+
+.info2, .info4, .info6,.info8{
+     height:100vh;
+     background-size: 100vw 80vh; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+ .abouttext h1,.socialmedialinks h1,.footerlinks h1{
+        padding: 20px 0px 0 0px;
+    font-family: "Titillium", sans-serif;
+      font-size: 12px;
+    font-weight: 600;   
+}
+
+.socialmedialinks li,.abouttext p, .footerlinks li a {  
+    list-style-type: none;
+    font-family: "Titillium", sans-serif;
+    font-weight: 400;
+    font-size: 10px;}
+
+
+}

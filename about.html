@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco TurningPoint</title>
+    <title>TurningPoint</title>
       <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,9 +30,33 @@
 <body id="aboutpage">
 
     <header id="aboutheader">
-        <div class="container text-center">
-       <div class="logo"> <p>Eco Turning-Point</p></div>
-    <div class="nav">
+      <div class="container text-sm-left text-md-center">
+    <div class="logo"> <p>TurningPoint</p></div>
+     
+    <div class="dropdown menu_header d-block d-md-none">
+          <div class="container">
+            <div class="text-right dropleft">
+              <button
+                class="btn btn-sm btn-light dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-label="Menu"
+              >
+                <i class="fas fa-grip-lines"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="Countrydata.html">Index Broschure</a>
+                <a class="dropdown-item" href="about.html"> Get Involved</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="nav d-none d-md-block">
         <ul class="list-inline">
                      <li class="list-inline-item"> <a href="index.html">Home</a></li>
             <li class="list-inline-item"> <a href="Countrydata.html">Index Broschure</a></li>
@@ -72,19 +96,21 @@
 <footer>
 <div class="footerframe container">
     <div class="row">
-    <div class="col-4 text-center abouttext">
+    <div class="col-8 col-md-4 text-center abouttext">
         <h1>About</h1>
-        <p> The ambition with this webpage is to present the challenges we facing today and help you to find aid organisition working in your area of interest
+        <p class="d-none d-md-block"> The ambition with this webpage is to present the challenges we facing today and help you to find aid organisition working in your area of interest
+        </p>
+          <p class="d-block d-md-none"> We are standing on breakpoint, together we can turn the wheel to a better future
         </p>
     </div>
-    <div class="col-4 footerlinks text-center">    
+    <div class="col-4  d-none d-md-block footerlinks text-center">    
           <h1>Quick Links</h1>
              <li><a href="index.html">Home</a></li>
             <li><a href="Countrydata.html">Index Broschure</a></li>
             <li><a href="about.html"> Get Involved</a></li>
            </div>
     <div class="col-4 socialmedialinks text-center">
-               <h1 class="text-center">Contact Us</h1>
+               <h1>Contact Us</h1>
              <li>Twitter</li>
             <li>Facebook</li>
             <li>Instagram</li>
@@ -92,6 +118,23 @@
 </div>
 </div>
 </footer>
+<!--Bootstrap-->
+ <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+       <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
 <script src="assets/js/Aidorg.js"> </script>
 </body>
 </html>
