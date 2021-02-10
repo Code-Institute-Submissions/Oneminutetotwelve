@@ -126,7 +126,7 @@
  color:#380707;
  padding-top: 100px;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -134,7 +134,7 @@
     color:#7d1313;
  padding-top: 100px;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500; 
 }
 
@@ -142,7 +142,7 @@
     color:#fffdca;
  padding-top: 100px;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500; 
 }
 
@@ -229,10 +229,10 @@
     /* Footer section common for all pages*/
 
     footer{
-    padding-top: 100px;
-     height:300px;
+    padding-top: 10px;
+     height:200px;
      width: 100%;
-          background-size: 2600px 300px;
+ background-size: 2400px 220px;
          background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
@@ -243,9 +243,10 @@
    } 
 
    .footerframe h1{
-        padding: 20px 0px 0 0px;
+       color:black;
+        padding: 54px 0px 0 0px;
     font-family: "Roboto", sans-serif;
-      font-size: 24px;
+      font-size: 16px;
     font-weight: 600;   
 }
 
@@ -253,15 +254,17 @@
     list-style-type: none;
     font-family: "Titillium", sans-serif;
     font-weight: 400;
-    font-size: 16px;}
+    font-size: 12px;}
 
 .footerframe p{  
     font-family: "Titillium", sans-serif;
     font-weight: 400;
-    font-size: 16px;}
+    font-size: 14px;}
 
 .abouttext p, .footerlinks li, .socialmedialinks li {
+        font-family: "Titillium", sans-serif;
     background-color: white;
+          font-size: 12px;
      opacity: 0.7;
 }
 
@@ -310,8 +313,8 @@
 /*Countrydata page mainSection*/
 
 .country_mainframe{
-height: 600px;
-margin-top: 10px;
+height: 75vh;
+margin-top: 20px;
 color:#ddd5bc;
 text-shadow: 1px solid black;
 }
@@ -377,9 +380,9 @@ text-shadow: 1px solid black;
 
 
 .earth{
-    height:800px;
+    height:600px;
     background-image: url("../img/pexels-pixabay-355935.jpg");
-    background-size: 500px 500px;
+    background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -388,12 +391,12 @@ text-shadow: 1px solid black;
 
    
 .aboutFrame{
-     height:500px; 
+     height:300px; 
      color:white;
    padding-top:0;
    background-color: #050506;
         background-image: url("../img/klipartz.com_smoke.png");
-     background-size: 400px 400px;
+     background-size: 200px 200px;
     opacity:0.6; 
      background-position: center;
      background-repeat: no-repeat;
@@ -444,10 +447,10 @@ text-shadow: 1px solid black;
 }
 
 .test2Frame{
-   height:500px; 
+   height:250px; 
    background-color: #050506;
         background-image: url("../img/klipartz.com (4)_fire.png");
-     background-size: 300px 400px;
+     background-size: 150px 200px;
     opacity:0.6; 
      background-position: center;
      background-repeat: no-repeat;
@@ -518,8 +521,20 @@ text-shadow: 1px solid black;
      background-repeat: no-repeat;
     }
 
+    
+.country_mainframe{
+height: 50vh;
+margin-top: 20px;
+}
+
+    #map{
+  height: 200px; 
+  border: 6px solid #e6e6e6;  
+  border-radius: 2%;
+}
+
  .abouttext h1,.socialmedialinks h1,.footerlinks h1{
-        padding: 20px 0px 0 0px;
+        padding: 40px 0px 0 0px;
     font-family: "Titillium", sans-serif;
       font-size: 12px;
     font-weight: 600;   
