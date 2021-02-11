@@ -99,7 +99,6 @@ The personas main goal is to find informations about today problems so that they
   - Used for the website fonts.
 - Microsoft PowerPoint
   - Used for creating mockups for e.g., Topology in readme-file
-- Image Resizer
 - Am I Responsive?
   - A tool for taking a quick snapshot of the responsive breakpoints of the website to visualise how the site will look on different device screen sizes in one place. The resulting screenshot is also used as the README.md logo image.
 - Google Inspection Tool
@@ -157,14 +156,64 @@ The personas main goal is to find informations about today problems so that they
 ### Fixed Bugs
 
 #### I have encountered and fixed following bugs
-- Unable to show google map due to 
+- Unable to show google map due restriction in height of the element, solved by changing height of the dev
+- Unable to show some function in google map due to overlaying footer element, changed the size of the footer section to avoid overlaying effects
 
-### Credit
+### Known Bugs
+- Depedending on device type picture and text are presented in an unsynchronized manor while scrolling through the index page, one solution could be to incoporate the image in onscroll function instead of using parallax effect in css
+- Coordinates from trackCorona are only used in training purpose and i take no responsibility in the accuracy of the data
+
+---
+## Credits
+
+### Image
+- For my pages I used the images listed below. I collected the images from licenced or free to use sources.
+
+#### Indexpage
+- [Bckground image](assets/img/pexels-pixabay-60013.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
+- [Info picture # 2](assets/img/pexels-guduru-ajay-bhargav-1043558.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
+- [Info picture # 4](assets/img/pexels-guduru-ajay-bhargav-1043558.jpg) was downloaded from [Izismile.com](https://img.izismile.com/img/img3/20100729/640/barehands_clean_up_640_08.jpg)
+- [Info picture # 6](assets//img/pexels-chris-leboutillier-929385.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
+- [Info picture # 8](assets//img/pexels-karolina-grabowska-4207908.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
+- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+
+#### Countrydatapage
+- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+
+#### Countrydatapage
+- [Header image](assets//img/klipartz.com_watersurface.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+- [Smoke image](assets//img/klipartz.com_smoke.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+- [Earth image](assets//img/pexels-pixabay-355935.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
+- [Fire image](assets//img/klipartz.com(4)_fire.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
+
+### Links
+
+- I have extracted information or linked to following pages to provide the personas using my pages with useful information
+
+* [worldbank.org](https://api.worldbank.org/v2/country/1W/indicator/SP.POP.TOTL/?format=json&date=2010:2020&per_page=5000) api for population density at global scale
+* [worldbank.org](https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?format=json&per_page=100&source=2&date=2010:2020) api for life expectancy at global scale
+* [worldbank.org](https://api.worldbank.org/v2/en/country/1W/indicator/SI.POV.DDAY?format=json&per_page=100&source=2&date=2010:2020) api for poverty at global scale
+* [trackcorona](https://www.trackcorona.live/api/countries) api for country coordinates
+* [worldbank.org](https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL/?format=json&date=2010:2020&per_page=5000) api for population density at country level
+* [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/SP.DYN.LE00.IN?format=json&per_page=3000&source=2&date=2010:2020) api for life expectancy at country level
+* [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/SI.POV.DDAY?format=json&per_page=3000&source=2&date=2010:2020) api for poverty at country level
+* [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/EN.ATM.CO2E.KT?format=json&per_page=20000&source=2) api for carbon emission at country level
+
+
+
+
+
+
+
+
+
+### Content
+
+
 
 #### Code
 - Worldbank = for datacollection
 - Google = Map Function
 
-#### Image
-- Users on Pexel.com 
 
