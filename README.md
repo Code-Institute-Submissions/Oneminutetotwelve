@@ -10,7 +10,7 @@
 
 ### Project Goal
 
-#### The goal of this project is to build a interactive and responsive website presenting todays global challenges using data e.g. Worldbank and connect it to Googlemap.
+#### The goal of this project is to build a interactive and responsive website presenting todays global challenges using data e.g. Worldbank and connect it to Googlemap. Being a student project i don't take any responsibility in the accuracy and validity of the information extracted from external sources.
 
 #### The features on the website will:
 - Give users the possibilty to understand todays global problems based on facts and realtime data
@@ -21,12 +21,12 @@
 #### I will achieve this by:
 - Present Global data from Worldbank together with links describing problem such as global warming, climate change, species extinction, poverty etc.. 
 - Extract data on countrylevel from Worldbank, connect and present it on a Googlemap-function
-- Link to trustworthy Aid organisations 
+- Present links to trustworthy Aid organisations 
 
 
 ## User Goal
 
-#### We expect this website to be used by the following personas
+#### I expect this website to be used by the following personas
 - Knowledge seeker who want to get background on todays global problems based on realtime data
 - People who want to get involved and change the directions of today global challenges
 
@@ -71,7 +71,7 @@ The personas main goal is to find informations about today problems so that they
 - CSS3
   - Used to style the individual webpages.
 - Javascript
-  -  Used to collecting data from Worldbank, countrycoordinates from trackCorona and adding the information to a Googlemap function in the Countrydata page.
+  -  Used for collecting data from Worldbank, countrycoordinates from trackCorona and adding the information to a Googlemap function in the Countrydata page.
    Data from Worldbank was also presented on global scale on the index page and text section was activated using an onscrollfunction.
 
 ### Libraries
@@ -123,7 +123,7 @@ The personas main goal is to find informations about today problems so that they
 - Onscroll and parallax function on index page with text and pictures in a balanced porportion to allow users to interact and absorb important inforamtion
 - Google map function on countrydata page with click function on country marker to open window to allow users to navigate and compare information between countries
 - Links to external website explaining the background to some of the challenges we are facing today
-- Links to aid organisation
+- Links to aid organisations
 - Social media links (not activated)
 
 ### Future Features
@@ -156,12 +156,16 @@ The personas main goal is to find informations about today problems so that they
 ### Fixed Bugs
 
 #### I have encountered and fixed following bugs
-- Unable to show google map due restriction in height of the element, solved by changing height of the dev
+- Unable to show google map due restriction in height of the element, solved by changing height of the div in which the function was located
 - Unable to show some function in google map due to overlaying footer element, changed the size of the footer section to avoid overlaying effects
 
 ### Known Bugs
 - Depedending on device type picture and text are presented in an unsynchronized manor while scrolling through the index page, one solution could be to incoporate the image in onscroll function instead of using parallax effect in css
 - Coordinates from trackCorona are only used in training purpose and i take no responsibility in the accuracy of the data
+
+### Concerns
+
+- I experience that my code at some occasions are altered without my help (e.g. altered fontsize, href and div size)
 
 ---
 ## Credits
@@ -180,7 +184,7 @@ The personas main goal is to find informations about today problems so that they
 #### Countrydatapage
 - [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 
-#### Countrydatapage
+#### About page
 - [Header image](assets//img/klipartz.com_watersurface.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 - [Smoke image](assets//img/klipartz.com_smoke.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 - [Earth image](assets//img/pexels-pixabay-355935.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
@@ -199,21 +203,57 @@ The personas main goal is to find informations about today problems so that they
 * [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/SP.DYN.LE00.IN?format=json&per_page=3000&source=2&date=2010:2020) api for life expectancy at country level
 * [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/SI.POV.DDAY?format=json&per_page=3000&source=2&date=2010:2020) api for poverty at country level
 * [worldbank.org](https://api.worldbank.org/v2/en/country/all/indicator/EN.ATM.CO2E.KT?format=json&per_page=20000&source=2) api for carbon emission at country level
+* [Google maps](https://developers.google.com/maps/) api 
+* [UN.org](https://news.un.org/en/story/2020/11/1077792) with information about starvation
+* [Wikipedia.org](https://en.wikipedia.org/wiki/Climate_change) with information about climate change
+* [bbc.com](https://www.bbc.com/news/business-32824770)   with information about gap between rich and poor and information about overexploitation
+* [conservationandsociety.com](http://www.conservationandsociety.org/article.asp?issn=0972-4923;year=2003;volume=1;issue=1;spage=99;epage=111;aulast=Ehrenfeld)   with information about ecological consequenses
+* [nasa.gov](https://climate.nasa.gov/vital-signs/global-temperature/) with information about global warming
+* [cnn.com](https://edition.cnn.com/2019/08/21/americas/amazon-rainforest-fire-intl-hnk-trnd/index.html) with information about deforestion
+* [wikipedia.org](https://en.wikipedia.org/wiki/History_of_chemistry) with information about the history about chemical production
+* [ipcc.ch](https://www.ipcc.ch/sr15/) with information about global warming
+* [wwf.org](https://www.wwf.org.uk/press-release/living-planet-report-2020) with information about ecological consequenses
+* [cnn.com](https://edition.cnn.com/2020/06/01/world/sixth-mass-extinction-accelerating-intl/index.html) with information about mass extinction
+* [iucnredlist.org](https://www.iucnredlist.org/) with information about species loss
+* [footprintnetwork.org](https://www.footprintnetwork.org/our-work/ecological-footprint/) with information about ecological footprint
+* [who.int](https://www.who.int/emergencies/partners/non-governmental-organizations) 
+* [sida.se](https://cso.sida.se/) 
+* [wikipedia.org](https://en.wikipedia.org/wiki/List_of_development_aid_agencies) list of aid organisation
+
+
+### Deployment
+
+The website was developed using both Gitpod for constructing code which then was pushed to GitHub,  which hosted my repository. I conducted following step to deploy my code.
+- Navigated and logged in to GitHub
+-  Navigated to my repository [GurraT/Oneminutetotwelve](https://github.com/GurraT/Oneminutetotwelve) 
+- Opened settings.
+- Scrolled down to the Section GitHub pages
+- Selected master branch in the source dropdown menu
+- Confirmed choice by clicking on save
+#### To see the end result and open deployed code in a webbrowser following steps were conducted 
+- Navigated to my repository [GurraT/Oneminutetotwelve](https://github.com/GurraT/Oneminutetotwelve) 
+- Click on the code buttom
+- Selected http-adress and copied it to a webbrowser
+
+
+### Inspiration
+
+#### The Following README-file was used as an inspiration and extracting information for writing my own README-file
+[Aviation-Consultancy](https://github.com/simonjvardy/Aviation-Consultancy)
+
+### Acknowledgements
+
+- I am grateful for the feedback i got from my mentor Narender Singh at Code Institute e.g., to make my webpage more interactive and user friendly using parallax function
+
+#### I also want to thanks following people
+
+- Philip Magnusson who with his insight in the field and with his feedback given me valuable information regarding javascript
+- Carl-Johan Svenlin, Tobias Thomsson, Fredrik Thomsson for beta-testing my webpage and given me constructive feedback on the layout
+- The support I got from tutors and student care at Code institute
 
 
 
 
 
-
-
-
-
-### Content
-
-
-
-#### Code
-- Worldbank = for datacollection
-- Google = Map Function
 
 
