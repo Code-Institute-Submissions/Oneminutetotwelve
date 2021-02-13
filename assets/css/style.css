@@ -4,7 +4,7 @@
 
 /* Index page Body*/
 
-   #Indexpage{min-height: 500px;
+   #Indexpage{height: 10000px;
   background-image: url("../img/pexels-pixabay-60013.jpg");
      background-position: center;
     background-size: cover;
@@ -14,20 +14,21 @@
 /*Index page Header section*/
 
 #indexHeader {
-     height: 23vh;
+     height: 20vh;
     width:100%;
     background-size: 100%;
     background-color: #212f2f;
     background-repeat: no-repeat;
     background-position: 40vh;
          top:0;
-    position: fixed;    
+    position: fixed;  
+    z-index: 2;  
      } 
 
 /*Header section common for all pages */
 
 .logo{
-     padding-top:10px;
+     padding-top:5px;
 }
 
 
@@ -35,7 +36,7 @@
        font-family: "Tillium", sans-serif;
      color:#6b91a4;
      text-shadow: 3px 3px #1c1e22;
-    font-size: 52px;
+    font-size: 38px;
     font-weight: 600;
 }
 
@@ -43,10 +44,10 @@
 
 .nav_index{
     font-family: "Open Sans", sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700; 
     justify-content: center;
-        padding-right: 5px;
+        padding-right: 2px;
   }
 
 .nav_index ul{
@@ -58,7 +59,7 @@
 }
 
 .nav_index li a{
-    color:#72737b;
+    color:#d6cdc0;
     text-decoration: none;
 }
 
@@ -112,9 +113,9 @@
     position: fixed;
     text-align: center;
     top: 20vh;
-    left: 20vw;
-    right: 20vw;
-    z-index: 2;
+    left: 0vw;
+    right: 0vw;
+    z-index: 1;
     display:none;
  }
 
@@ -122,105 +123,112 @@
     display: block !important; /*connected to addText.js and make classes visable*/
 }
 
-.info1 p, .info3t p, .info5t p, .info7t p, .info9t p{
- color:#380707;
+.info1 p, .info2t p,.info3t p,.info4t p, .info5t p,.info6t p, .info7t p, .info8t p{
+ color:#e1d7d7;
+ text-shadow: black 2px 2px;
  padding-top: 100px;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
-.info2t p{
-    color:#7d1313;
- padding-top: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500; 
-}
-
-.info4t p, .info8t p{
-    color:#fffdca;
- padding-top: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500; 
-}
-
-.info2t p a{
-      color:rgb(41, 39, 39);
-    text-decoration: none;  
-}
-
-.info4t p a{
-      color:lightgray;
-    text-decoration: none;  
-}
-
-.info4t p a:hover{
-    color:gray;
-    text-decoration: none;    
-}
-
-.info6t p{
-       color:white;
-    text-decoration: none; 
-     padding-top: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  font-weight: 500;     
-}
-
-.info6t p a{
-       color:lightgrey;
-    text-decoration: none;     
-}
-
-.info6t p a:hover{
-       color:darkgray;
-     font-size: 30px;
-     text-decoration: none;
-}
-
- .info3t p a,.info5t p a, .info7t p a, .info9t p a{
+.info9t p{ 
     color:black;
-    text-decoration: none;
+ text-shadow: gray 1px 1px;
+ padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.info2t p a:hover, .info3t p a:hover, .info5t p a:hover, .info7t p a:hover{
+
+.info2t p a,.info3t p a,.info4t p a,.info5t p a,.info6t p a,.info7t p a,.info8t p a,.info9t p a{
+      color:black;
+       text-shadow: gray 0.5px 0.5px;
+         font-weight: 600;
+    text-decoration: none;  
+}
+
+
+
+.info2t p a:hover, .info3t p a:hover, .info4t p a:hover, .info5t p a:hover, .info6t p a:hover .info7t p a:hover{
    color:rgb(27, 25, 25);
-     font-size: 30px;
+     font-size: 19px;
      text-decoration: none;
 }
 
-.info2{
+.info2t{
      height:1200px;
-     background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); 
-     background-size: 100vw 80vw; 
+    /* background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); */
+    background-color: black;
+    opacity:0.6;
+     background-size: 100% 100vh; 
+      background-position: center;
+    }
+.info3t{
+     height:1200px;
+    /* background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); */
+    background-color: rgb(71, 66, 66);
+    opacity:0.6;
+     background-size: 100vw 60vw; 
       background-position: center;
      background-repeat: no-repeat;
     }
 
 
-
-.info4{
+.info4t{
      height:1200px;
-     background-image:  url("../img/barehands_clean_up_640_08.jpg"); 
+        background-color: rgb(152, 132, 132);
+    opacity:0.6;
+   /*  background-image:  url("../img/barehands_clean_up_640_08.jpg"); */
      background-size: 100%; 
       background-position: center;
      background-repeat: no-repeat;
     }
 
-    .info6{
+    .info5t{
      height:1200px;
-     background-image:  url("../img/pexels-chris-leboutillier-929385.jpg"); 
+        background-color: rgb(132, 74, 74);
+    opacity:0.6;
+   /*  background-image:  url("../img/barehands_clean_up_640_08.jpg"); */
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+        .info6t{
+     height:1200px;
+        background-color: rgb(133, 56, 56);
+    opacity:0.6;
+   /*  background-image:  url("../img/barehands_clean_up_640_08.jpg"); */
      background-size: 100%; 
       background-position: center;
      background-repeat: no-repeat;
     }
 
-   .info8{
+    .info7t{
      height:1200px;
-     background-image:  url("../img/pexels-karolina-grabowska-4207908.jpg"); 
+            background-color: rgb(120, 105, 31);
+    opacity:0.6;
+    /* background-image:  url("../img/pexels-chris-leboutillier-929385.jpg"); */
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+
+   .info8t{
+     height:1200px;
+            background-color: rgb(145, 132, 68);
+    opacity:0.6;
+    /* background-image:  url("../img/pexels-chris-leboutillier-929385.jpg"); */
+     background-size: 100%; 
+      background-position: center;
+     background-repeat: no-repeat;
+    }
+   .info9t{
+     height:1200px;
+            background-color: white;
+    opacity:0.6;
+    /* background-image:  url("../img/pexels-karolina-grabowska-4207908.jpg"); */
      background-size: 100%; 
       background-position: center;
      background-repeat: no-repeat;
@@ -230,21 +238,23 @@
 
     footer{
     padding-top: 10px;
-     height:200px;
+     height:160px;
      width: 100%;
- background-size: 2400px 220px;
-         background-position: center;
+      background-color: #dccece;  
+ background-size: 2400px 220px;     
+ background-position: center;
         background-repeat: no-repeat;
      border-bottom: #c7deec 12px 12px;
-     background-image: url("../img/klipartz.com (6)_iceberg.png");
+     /*background-image: url("../img/klipartz.com (6)_iceberg.png");*/
           bottom: -50px;
+          z-index:2;
     position: fixed;
    
    } 
 
    .footerframe h1{
        color:black;
-        padding: 54px 0px 0 0px;
+        padding: 5px 0px 0 0px;
     font-family: "Roboto", sans-serif;
       font-size: 16px;
     font-weight: 600;   
@@ -263,7 +273,7 @@
 
 .abouttext p, .footerlinks li, .socialmedialinks li {
         font-family: "Titillium", sans-serif;
-    background-color: white;
+    /*background-color: white;*/
           font-size: 12px;
      opacity: 0.7;
 }
@@ -508,18 +518,23 @@ text-shadow: 1px solid black;
     margin: 0 8px 0 8px;
 }
 
+.info2t, .info3t,.info4t,.info5t,.info6t,.info7t,.info8t,.info9t{
+    height:1200px;
+    position: fixed;
+    text-align: center;
+    top: 10vh;
+    left: 0vw;
+    right: 0vw;
+    z-index: 1;
+    display:none;
+ }
+
 .info1 p, .info2t p, .info3t p,.info4t p, .info5t p,.info6t p, .info7t p,.info8t p, .info9t p{
     font-size:14px;
-     padding-top: 10px;
+     padding-top: 40px;
 
 }
 
-.info2, .info4, .info6,.info8{
-     height:100vh;
-     background-size: 100vw 80vh; 
-      background-position: center;
-     background-repeat: no-repeat;
-    }
 
     
 .country_mainframe{

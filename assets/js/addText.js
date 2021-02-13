@@ -22,28 +22,28 @@ function myFunction() {
         Infot8.classList.remove("sticky")
     Infot9.classList.remove("sticky")
 
-     if (window.pageYOffset > 990 && window.pageYOffset < 1525) {
+     if (window.pageYOffset > 300 && window.pageYOffset < 1500) {
     Infot2.classList.add("sticky");
     } 
-    else if (window.pageYOffset > 2200 && window.pageYOffset < 2800) {
+    else if (window.pageYOffset > 1510 && window.pageYOffset < 2710) {
       Infot3.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 3370 && window.pageYOffset < 4050) {
+    else if (window.pageYOffset > 2720 && window.pageYOffset < 3920) {
       Infot4.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 4590 && window.pageYOffset < 5230) {
+    else if (window.pageYOffset > 3930 && window.pageYOffset < 5130) {
       Infot5.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 5785 && window.pageYOffset < 6424) {
+    else if (window.pageYOffset > 5140 && window.pageYOffset < 6340) {
       Infot6.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 7016 && window.pageYOffset < 7665) {
+    else if (window.pageYOffset > 6350 && window.pageYOffset < 7550) {
       Infot7.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 8212 && window.pageYOffset < 8814) {
+    else if (window.pageYOffset > 7560 && window.pageYOffset < 8760) {
       Infot8.classList.add("sticky");  
     }
-    else if (window.pageYOffset > 9394) {
+    else if (window.pageYOffset > 8770) {
       Infot9.classList.add("sticky");  
     }
     
