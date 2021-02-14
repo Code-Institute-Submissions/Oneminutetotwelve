@@ -4,514 +4,560 @@
 
 /* Index page Body*/
 
-   #Indexpage{height: 10000px;
-  background-image: url("../img/pexels-pixabay-60013.jpg");
-     background-position: center;
-    background-size: cover;
-    background-color:#10171a;
-    background-attachment: fixed;}
+#Indexpage {
+	height: 10000px;
+	background-image: url("../img/pexels-pixabay-60013.jpg");
+	background-position: center;
+	background-size: cover;
+	background-color: #10171a;
+	background-attachment: fixed;
+}
+
 
 /*Index page Header section*/
 
-#indexHeader, #CountryHeader {
-     height: 120px;
-    width:100%;
-    background-size: 100%;
-    background-color: #212f2f;
-    background-repeat: no-repeat;
-    background-position: 40vh;
-         top:0;
-    position: fixed;  
-    z-index: 2;  
-     } 
+#indexHeader,
+#CountryHeader {
+	height: 120px;
+	width: 100%;
+	background-size: 100%;
+	background-color: #212f2f;
+	background-repeat: no-repeat;
+	background-position: 40vh;
+	top: 0;
+	position: fixed;
+	z-index: 2;
+}
+
 
 /*Header section common for all pages */
 
-.logo{
-     padding-top:5px;
+.logo {
+	padding-top: 5px;
 }
 
-
-.logo p{
-       font-family: "Tillium", sans-serif;
-     color:#6b91a4;
-     text-shadow: 3px 3px #1c1e22; 
-    font-size: 38px;
-    font-weight: 600;
+.logo p {
+	font-family: "Tillium", sans-serif;
+	color: #6b91a4;
+	text-shadow: 3px 3px #1c1e22;
+	font-size: 38px;
+	font-weight: 600;
 }
+
 
 /* Header navbar */
 
-.nav, .nav_index{
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 700; 
-    justify-content: center;
-        padding-right: 2px;
-  }
-
-.nav ul, .nav_index ul{
-       list-style-type: none;
-       text-align: center;
-      }
-.nav li, .nav_index li{
-    margin: 0 28px 0 28px;
+.nav,
+.nav_index {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	justify-content: center;
+	padding-right: 2px;
 }
 
-.nav li a,.nav_index li a{
-    color:#d6cdc0;
-    text-decoration: none;
+.nav ul,
+.nav_index ul {
+	list-style-type: none;
+	text-align: center;
 }
 
-.nav li a:hover, .nav_index li a:hover{
-    color:#6b91a4;
-    text-decoration: none;
+.nav li,
+.nav_index li {
+	margin: 0 28px 0 28px;
 }
+
+.nav li a,
+.nav_index li a {
+	color: #d6cdc0;
+	text-decoration: none;
+}
+
+.nav li a:hover,
+.nav_index li a:hover {
+	color: #6b91a4;
+	text-decoration: none;
+}
+
 
 /*Index page Main section */
 
-.info1{
-    top:70px;
-       padding-top:100px;
-   height:1200px;   
+.info1 {
+	top: 70px;
+	padding-top: 100px;
+	height: 1200px;
 }
 
-.info3, .info5, .info7, .info9{
-     padding-top:400px;
-   height:1200px; 
+.info3,
+.info5,
+.info7,
+.info9 {
+	padding-top: 400px;
+	height: 1200px;
 }
 
-.info2t, .info3t,.info4t,.info5t,.info6t,.info7t,.info8t,.info9t{
-    height:1200px;
-    position: fixed;
-    text-align: center;
-    top: 70px;
-    left: 0vw;
-    right: 0vw;
-    z-index: 1;
-    display:none;
- }
-
-.sticky{
-    display: block !important; /*connected to addText.js and make classes visable*/
+.info2t,
+.info3t,
+.info4t,
+.info5t,
+.info6t,
+.info7t,
+.info8t,
+.info9t {
+	height: 1200px;
+	position: fixed;
+	text-align: center;
+	top: 70px;
+	left: 0vw;
+	right: 0vw;
+	z-index: 1;
+	display: none;
 }
 
-.info1 p, .info2t p,.info3t p,.info4t p, .info5t p,.info6t p, .info7t p, .info8t p{
- color:#dbd7e1;
- text-shadow: black 2px 2px;
- padding-top: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+.sticky {
+	display: block !important;
+	/*connected to addText.js and make classes visable*/
 }
 
-.info9t p{ 
-    color:black;
- text-shadow: gray 1px 1px;
- padding-top: 100px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+.info1 p,
+.info2t p,
+.info3t p,
+.info4t p,
+.info5t p,
+.info6t p,
+.info7t p,
+.info8t p {
+	color: #dbd7e1;
+	text-shadow: black 2px 2px;
+	padding-top: 100px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.info9t p {
+	color: black;
+	text-shadow: gray 1px 1px;
+	padding-top: 100px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.info2t p a,
+.info3t p a,
+.info4t p a,
+.info5t p a,
+.info6t p a,
+.info7t p a,
+.info8t p a,
+.info9t p a {
+	color: black;
+	text-shadow: gray 0.5px 0.5px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.info2t p a:hover,
+.info3t p a:hover,
+.info4t p a:hover,
+.info5t p a:hover,
+.info6t p a:hover .info7t p a:hover {
+	color: rgb(27, 25, 25);
+	font-size: 19px;
+	text-decoration: none;
+}
+
+.info2t {
+	height: 1200px;
+	background-color: rgb(101, 87, 87);
+	opacity: 0.6;
+	background-size: 100% 100vh;
+	background-position: center;
+}
+
+.info3t {
+	height: 1200px;
+	background-color: rgb(71, 66, 66);
+	opacity: 0.6;
+	background-size: 100vw 60vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.info4t {
+	height: 1200px;
+	background-color: rgb(152, 132, 132);
+	opacity: 0.6;
+}
+
+.info5t {
+	height: 1200px;
+	background-color: rgb(132, 74, 74);
+	opacity: 0.6;
+}
+
+.info6t {
+	height: 1200px;
+	background-color: rgb(133, 56, 56);
+	opacity: 0.6;
+}
+
+.info7t {
+	height: 1200px;
+	background-color: rgb(120, 105, 31);
+	opacity: 0.6;
+}
+
+.info8t {
+	height: 1200px;
+	background-color: rgb(145, 132, 68);
+	opacity: 0.6;
+}
+
+.info9t {
+	height: 1200px;
+	background-color: white;
+	opacity: 0.6;
 }
 
 
-.info2t p a,.info3t p a,.info4t p a,.info5t p a,.info6t p a,.info7t p a,.info8t p a,.info9t p a{
-      color:black;
-       text-shadow: gray 0.5px 0.5px;
-         font-weight: 600;
-    text-decoration: none; 
+/* Footer section common for all pages*/
+
+.footer_index {
+	padding-top: 10px;
+	height: 160px;
+	width: 100%;
+	background-color: #dccece;
+	background-size: 2400px 220px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: #c7deec 12px 12px;
+	bottom: -50px;
+	z-index: 2;
+	position: fixed;
+}
+
+.footer {
+	padding-top: 10px;
+	height: 140px;
+	width: 100%;
+	background-color: #dccece;
+	background-size: 2400px 220px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: #c7deec 12px 12px;
+	z-index: 2;
+}
+
+.footerframe h1 {
+	color: black;
+	padding: 5px 0px 0 0px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.footerframe ul {
+	list-style-type: none;
+	font-family: "Titillium", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.footerframe p {
+	font-family: "Titillium", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.abouttext p,
+.footerlinks li,
+.socialmedialinks li {
+	font-family: "Titillium", sans-serif;
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+.abouttext p {
+	color: black;
+	font-weight: 500;
+}
+
+.footerlinks li,
+.socialmedialinks li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.footerlinks li a,
+.socialmedialinks li {
+	color: black;
+	font-weight: 500;
+}
+
+.footerlinks li a:hover,
+.socialmedialinks li a:hover {
+	list-style-type: none;
+	text-decoration: none;
+	color: darkgray;
 }
 
 
+/*Countrydata page Body*/
 
-.info2t p a:hover, .info3t p a:hover, .info4t p a:hover, .info5t p a:hover, .info6t p a:hover .info7t p a:hover{
-   color:rgb(27, 25, 25);
-     font-size: 19px;
-     text-decoration: none;
+#CountrydataPage {
+	background-color: white;
+	background-position: center;
+	background-size: cover;
 }
-
-.info2t{
-     height:1200px;
-    background-color: rgb(101, 87, 87);
-    opacity:0.6;
-     background-size: 100% 100vh; 
-      background-position: center;
-    }
-.info3t{
-     height:1200px;
-    background-color: rgb(71, 66, 66);
-    opacity:0.6;
-     background-size: 100vw 60vw; 
-      background-position: center;
-     background-repeat: no-repeat;
-    }
-
-
-.info4t{
-     height:1200px;
-        background-color: rgb(152, 132, 132);
-    opacity:0.6;
-    }
-
-    .info5t{
-     height:1200px;
-        background-color: rgb(132, 74, 74);
-    opacity:0.6;
-    }
-        .info6t{
-     height:1200px;
-        background-color: rgb(133, 56, 56);
-    opacity:0.6;
-    }
-
-    .info7t{
-     height:1200px;
-            background-color: rgb(120, 105, 31);
-    opacity:0.6;
-    }
-
-   .info8t{
-     height:1200px;
-            background-color: rgb(145, 132, 68);
-    opacity:0.6;
-
-    }
-   .info9t{
-     height:1200px;
-            background-color: white;
-    opacity:0.6;
-    }
-
-    /* Footer section common for all pages*/
-
-    .footer_index{
-    padding-top: 10px;
-     height:160px;
-     width: 100%;
-      background-color: #dccece;  
- background-size: 2400px 220px;     
- background-position: center;
-        background-repeat: no-repeat;
-     border-bottom: #c7deec 12px 12px;
-          bottom: -50px;
-          z-index:2;
-    position: fixed;
-   
-   } 
-
-       .footer{
-    padding-top: 10px;
-     height:140px;
-     width: 100%;
-      background-color: #dccece;  
- background-size: 2400px 220px;     
- background-position: center;
-        background-repeat: no-repeat;
-     border-bottom: #c7deec 12px 12px;
-     z-index:2;
-   } 
-
-   .footerframe h1{
-       color:black;
-        padding: 5px 0px 0 0px;
-    font-family: "Roboto", sans-serif;
-      font-size: 16px;
-    font-weight: 600;   
-}
-
-.footerframe ul{  
-    list-style-type: none;
-    font-family: "Titillium", sans-serif;
-    font-weight: 400;
-    font-size: 12px;}
-
-.footerframe p{  
-    font-family: "Titillium", sans-serif;
-    font-weight: 400;
-    font-size: 14px;}
-
-.abouttext p, .footerlinks li, .socialmedialinks li {
-        font-family: "Titillium", sans-serif;
-          font-size: 12px;
-     opacity: 0.7;
-}
-
-   .abouttext p{
-          color:black;
-             font-size: 500;
-   }
-
-   .footerlinks li, .socialmedialinks li{
-          list-style-type: none;
-       text-decoration: none;
-    }
-
-      .footerlinks li a, .socialmedialinks li{
-      color:black;
-      font-size: 500;
-    }
-
-      .footerlinks li a:hover, .socialmedialinks li a:hover{
-          list-style-type: none;
-       text-decoration: none;
-       color:darkgray;
-   }
-
-    /*Countrydata page Body*/
-       
-#CountrydataPage{
-    background-color: white;
-    background-position: center;
-    background-size: cover;
-   }
 
 
 /*Countrydata page mainSection*/
 
-.country_mainframe{
-height: 360px;
-margin-top:160px;
-color:#ddd5bc;
-text-shadow: 1px solid black;
+.country_mainframe {
+	height: 360px;
+	margin-top: 160px;
+	color: #ddd5bc;
+	text-shadow: 1px black solid;
 }
+
 
 /*Countrydata page mainSection Googlemap*/
 
-#map{
-  height: 300px; 
-  border: 6px solid #e6e6e6;  
-  border-radius: 2%;
+#map {
+	height: 300px;
+	border: 6px solid #e6e6e6;
+	border-radius: 2%;
 }
+
 
 /*javascript googlemap */
 
 .map-info-window {
-    width:200px;
-    height:140px;
+	width: 200px;
+	height: 140px;
 }
 
 .map-info-window h1 {
-        font-family: "Titillium", sans-serif;
-        color: black;
-    font-weight: 600;
-    font-size: 12px;
+	font-family: "Titillium", sans-serif;
+	color: black;
+	font-weight: 600;
+	font-size: 12px;
 }
 
 .map-info-window p {
-        font-family: "Titillium", sans-serif;
-        color:rgb(36, 36, 41);
-        padding:0;
-            font-weight: 500;
-    font-size: 11px;
+	font-family: "Titillium", sans-serif;
+	color: rgb(36, 36, 41);
+	padding: 0;
+	font-weight: 500;
+	font-size: 11px;
 }
 
 
 /*About page Body*/
 
-#aboutpage{
-        height:500px;
-        top:200px;
-     background-color: #050506;
+#aboutpage {
+	height: 500px;
+	top: 200px;
+	background-color: #050506;
 }
 
 #aboutheader {
-     height: 120px;
-    width:100%;
-    background-size: 100%;
-    background-color: #212f2f;
-    background-repeat: no-repeat;
-    background-position: 40vh;
-         top:0;
-         position:fixed;
-         z-index: 2;
-     } 
+	height: 120px;
+	width: 100%;
+	background-size: 100%;
+	background-color: #212f2f;
+	background-repeat: no-repeat;
+	background-position: 40vh;
+	top: 0;
+	position: fixed;
+	z-index: 2;
+}
+
 
 /*About Section main section */
 
-#aboutmain{
-    background-color: #000000;
-    margin-top: 120px;
-    height:550px;
-
-  }
-
-
-.earth{
-    background-image: url("../img/pexels-pixabay-355935.jpg");
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-
+#aboutmain {
+	background-color: #000000;
+	margin-top: 120px;
+	height: 550px;
 }
 
-
-   
-.aboutFrame{
-     height:300px; 
-     color:white;
-   padding-top:0;
-   background-color: #050506;
-        background-image: url("../img/klipartz.com_smoke.png");
-     background-size: 200px 200px;
-    opacity:0.6; 
-     background-position: center;
-     background-repeat: no-repeat;
-     
+.earth {
+	background-image: url("../img/pexels-pixabay-355935.jpg");
+	background-size: 300px 300px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-
-.factText  {
-    padding-top: 20px;
-    text-shadow: #971d1d 1px 1px;
-        font-family: "Rubik", sans-serif;
-    color: white;
-    font-size: 16px;
-       }
-
-.links  {
-    padding-top: 20px;
+.aboutFrame {
+	height: 300px;
+	color: white;
+	padding-top: 0;
+	background-color: #050506;
+	background-image: url("../img/klipartz.com_smoke.png");
+	background-size: 200px 200px;
+	opacity: 0.6;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.links ul{
-    list-style: none;
+.factText {
+	padding-top: 20px;
+	text-shadow: #971d1d 1px 1px;
+	font-family: "Rubik", sans-serif;
+	color: white;
+	font-size: 16px;
 }
 
-.links li a{
-           font-family: "Rubik", sans-serif;
-    color: white;
-   text-shadow: darkblue 1px 1px;
-    font-size: 16px;
-     text-decoration: none;
+.links {
+	padding-top: 20px;
 }
 
-.links ul li a:hover{
-           font-family: "Rubik", sans-serif;
-    color: gray;
-        text-shadow: darkblue 1px 1px;
-    font-size: 18px;
-     text-decoration: none;
+.links ul {
+	list-style: none;
 }
 
-
-.test2Frame{
-   height:250px; 
-   background-color: #050506;
-        background-image: url("../img/klipartz.com (4)_fire.png");
-     background-size: 150px 200px;
-    opacity:0.6; 
-     background-position: center;
-     background-repeat: no-repeat;
-       
+.links li a {
+	font-family: "Rubik", sans-serif;
+	color: white;
+	text-shadow: darkblue 1px 1px;
+	font-size: 16px;
+	text-decoration: none;
 }
 
-.main_right, .pictureframe {
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 340px 340px;
-  
+.links ul li a:hover {
+	font-family: "Rubik", sans-serif;
+	color: gray;
+	text-shadow: darkblue 1px 1px;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.test2Frame {
+	height: 250px;
+	background-color: #050506;
+	background-image: url("../img/klipartz.com (4)_fire.png");
+	background-size: 150px 200px;
+	opacity: 0.6;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main_right,
+.pictureframe {
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 340px 340px;
 }
 
 
 /*Responsive actions */
 
-
 .menu_header {
-        position: fixed;
-        top: 20px;
-        right:30px;
-  opacity: 90%;
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	opacity: 90%;
 }
 
 .dropdown-menu a {
-  font-family: "Open Sans",sans-serif;
-  font-weight: 300;
-  font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
 }
 
 .dropdown-menu a:hover {
-     color:#6b91a4;
+	color: #6b91a4;
 }
 
 @media screen and (max-width: 1050px) {
-
-    #indexHeader {
-        padding-top: 10px;
-     height: 100px;   
-     } 
-
-.logo p{
-    font-size: 22px;
-         text-shadow: 1px 1px #1c1e22;
-}
-
-
-.nav_index{
-    font-size: 18px;
-    font-weight: 700; 
-  }
-
-  .nav_index li{
-    margin: 0 8px 0 8px;
-}
-
-.info1{   
-     padding-top: 150px;
-    padding-left: 30px;
-    padding-right: 30px;}
-
-.info2t, .info3t,.info4t,.info5t,.info6t,.info7t,.info8t,.info9t{
-    height:1200px;
-    position: fixed;
-    text-align: center;
-    top: 100px;
-    padding-top: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    z-index: 1;
-    display:none;
- }
-
-.info1 p, .info2t p, .info3t p,.info4t p, .info5t p,.info6t p, .info7t p,.info8t p, .info9t p{
-    font-size:14px;
-     padding-top: 40px;
-
-}
-
-.info2t p a:hover, .info3t p a:hover, .info4t p a:hover, .info5t p a:hover, .info6t p a:hover .info7t p a:hover{
-    font-size:15px;
-}
-
-.country_mainframe{
-height: 400px;
-margin-top: 140px;
-}
-
-    #map{
-  height: 300px; 
-  border: 6px solid #e6e6e6;  
-  border-radius: 2%;
-}
-
-
-
-.factText  {
-    padding-top: 20px;
-    font-size: 12px;
-       }
-
- .abouttext h1,.socialmedialinks h1,.footerlinks h1{
-        padding: 10px 0px 0 0px;
-    font-family: "Titillium", sans-serif;
-      font-size: 12px;
-    font-weight: 600;   
-}
-
-.socialmedialinks li,.abouttext p, .footerlinks li a {  
-    list-style-type: none;
-    font-family: "Titillium", sans-serif;
-    font-weight: 400;
-    font-size: 10px;}
-
-
+	#indexHeader {
+		padding-top: 10px;
+		height: 100px;
+	}
+	.logo p {
+		font-size: 22px;
+		text-shadow: 1px 1px #1c1e22;
+	}
+	.nav_index {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.nav_index li {
+		margin: 0 8px 0 8px;
+	}
+	.info1 {
+		padding-top: 150px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.info2t,
+	.info3t,
+	.info4t,
+	.info5t,
+	.info6t,
+	.info7t,
+	.info8t,
+	.info9t {
+		height: 1200px;
+		position: fixed;
+		text-align: center;
+		top: 100px;
+		padding-top: 100px;
+		padding-left: 30px;
+		padding-right: 30px;
+		z-index: 1;
+		display: none;
+	}
+	.info1 p,
+	.info2t p,
+	.info3t p,
+	.info4t p,
+	.info5t p,
+	.info6t p,
+	.info7t p,
+	.info8t p,
+	.info9t p {
+		font-size: 14px;
+		padding-top: 40px;
+	}
+	.info2t p a:hover,
+	.info3t p a:hover,
+	.info4t p a:hover,
+	.info5t p a:hover,
+	.info6t p a:hover .info7t p a:hover {
+		font-size: 15px;
+	}
+	.country_mainframe {
+		height: 400px;
+		margin-top: 140px;
+	}
+	#map {
+		height: 300px;
+		border: 6px solid #e6e6e6;
+		border-radius: 2%;
+	}
+	.factText {
+		padding-top: 20px;
+		font-size: 12px;
+	}
+	.abouttext h1,
+	.socialmedialinks h1,
+	.footerlinks h1 {
+		padding: 10px 0px 0 0px;
+		font-family: "Titillium", sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.socialmedialinks li,
+	.abouttext p,
+	.footerlinks li a {
+		list-style-type: none;
+		font-family: "Titillium", sans-serif;
+		font-weight: 400;
+		font-size: 10px;
+	}
 }

@@ -114,6 +114,8 @@ I used following font for my project
   - Used for validating the css-code
 - W3C Markup-validator
   - Used for validating the html-code
+- freeformatter.com
+    - Used for formatting/beatify CSS and Html-code
 
 ---
 
