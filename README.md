@@ -1,8 +1,9 @@
-# EcoTurningPoint
+# TurningPoint
 
 ![Mockup](assets/wireframe/EcoTurningPoint.jpg "Typography EcoTurningPoint")
 
-#### The aim of this website is to in a simplistic way present some of todays challenges such climate change, poverty and global warming by using realtime data on global and on countrywise level. This will be done using data from Worldbank and connect it to Google-map. Finally I will present options on how to get involved or support different organisations working these challenges. 
+#### The aim of this website is to in a simplistic way present some of todays challenges such climate change, poverty and global warming by using realtime data on global and on countrywise level. This was done using data from Worldbank and connect it to Google-map. Finally I presented options on how to get involved or support different organisations working these challenges.The code for this project is found [here](https://github.com/GurraT/Oneminutetotwelve "Link to Oneminutetotwelve repository")
+ 
 ------
 -----
 
@@ -52,7 +53,11 @@ The personas main goal is to find informations about today problems so that they
 ![Typology](assets/wireframe/typo.jpg "Typography EcoTurningPoint")
 
 #### Fonts 
-
+I used following font for my project 
+- Tillium (used in Logo and in about-text and links in Footer as well as text in markerwindow in GSooglemap)
+- Roboto (used in infotext on indexpage and as header in Footer)
+- Open Sans (used in links for navbar in header)
+- Rubrik (used in for text and links in main section of about page)
 
 #### Colors
 
@@ -175,21 +180,11 @@ The personas main goal is to find informations about today problems so that they
 
 #### Indexpage
 - [Bckground image](assets/img/pexels-pixabay-60013.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
-- [Info picture # 2](assets/img/pexels-guduru-ajay-bhargav-1043558.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
-- [Info picture # 4](assets/img/pexels-guduru-ajay-bhargav-1043558.jpg) was downloaded from [Izismile.com](https://img.izismile.com/img/img3/20100729/640/barehands_clean_up_640_08.jpg)
-- [Info picture # 6](assets//img/pexels-chris-leboutillier-929385.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
-- [Info picture # 8](assets//img/pexels-karolina-grabowska-4207908.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
-- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
-
-#### Countrydatapage
-- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 
 #### About page
-- [Header image](assets//img/klipartz.com_watersurface.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 - [Smoke image](assets//img/klipartz.com_smoke.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 - [Earth image](assets//img/pexels-pixabay-355935.jpg) was downloaded from [Pexel.com](https://www.pexels.com/)
 - [Fire image](assets//img/klipartz.com(4)_fire.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
-- [Footer image](assets//img/klipartz.com(6)_iceberg.png) was downloaded from [Klipartz.com](https://www.klipartz.com/)
 
 ### Links
 
