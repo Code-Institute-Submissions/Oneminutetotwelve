@@ -8,7 +8,7 @@ fetch('https://api.worldbank.org/v2/country/1W/indicator/SP.POP.TOTL/?format=jso
                 appendpopData(popdata);
             })
             .catch(function (err) {
-                console.log('error: ' + err);
+              alert('error: ' + err);
             });
 
             sumWorldPop = 0;
@@ -27,7 +27,7 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
                 appendageData(agedata);
             })
             .catch(function (err) {
-                console.log('error: ' + err);
+              console.log('error: ' + err);
             });
 
         function appendageData(agedata) {
@@ -44,28 +44,11 @@ fetch("https://api.worldbank.org/v2/en/country/1W/indicator/SP.DYN.LE00.IN?forma
                 appendagePovertyData(povertydata);
             })
             .catch(function (err1) {
-                console.log('error: ' + err1);
+             console.log('error: ' + err1);
             });
 
         function appendagePovertyData(povertydata) {
          document.getElementById("povertyData").innerHTML =  povertydata[1][3].value.toFixed(2);
-        }
-
-
-        // Worldbank input CO2 emisson kilo tonnes / year
-        
-        fetch("https://api.worldbank.org/v2/en/country/1W/indicator/EN.ATM.CO2E.KT?format=json&per_page=20000&source=2")
-
-             .then(function (respnse) {
-                return respnse.json();
-            })
-            .then(function (CO2data) {
-                appendageCO2Data(CO2data);
-                   })
-            .catch(function (err2) {
-                console.log('error: ' + err2);
-            });
-
-        function appendageCO2Data(CO2data) {
-        document.getElementById("CO2Data").innerHTML = 'Annual carbon dioxide emissions '+ '[ ' + CO2data[1][4].date + ' / World ]: ' + CO2data[1][4].value.toFixed(2) + '  Kilo tonnes';        //Carbon dioxide emissions
+     
+    
         }

@@ -46,8 +46,6 @@ function myFunction() {
     else if (window.pageYOffset > 8770) {
       Infot9.classList.add("sticky");  
     }
-    
-  console.log(window.pageYOffset)
 }
 
 

@@ -24,8 +24,6 @@ fetch("https://www.trackcorona.live/api/countries")
 .then(function (dataPop) {
         pop = dataPop;
 
-      // console.log(pop);
-       //console.log(countries.data[1].location)
         let length = pop[1].length;
         let len = countries.data.length;
         i=0;
@@ -40,8 +38,7 @@ fetch("https://www.trackcorona.live/api/countries")
         }
        }
         }
-        
-     //console.log(pushstep1);
+
     })
     .then(function (dataCountry) {
     countries = dataCountry;
@@ -69,7 +66,6 @@ fetch("https://www.trackcorona.live/api/countries")
        }
         }
         
-   //  console.log(pushstep2);
     
     })
     .then(function (dataPov) {
@@ -83,8 +79,6 @@ fetch("https://www.trackcorona.live/api/countries")
 .then(function (datapoverty) {
         povert = datapoverty;
 
-      console.log(povert);
-       //console.log(countries.data[1].location)
         let length = povert[1].length;
          let lngth2 = pushstep2.length;
         i=0;
@@ -99,7 +93,7 @@ fetch("https://www.trackcorona.live/api/countries")
         }
        }
     }
-    // console.log(pushstep3);
+
         })
          .then(function (dataCO2) {
     dCO2 = dataCO2;
@@ -111,9 +105,6 @@ fetch("https://www.trackcorona.live/api/countries")
     
 .then(function (dataco2) {
         CO2 = dataco2;
-
-      console.log(CO2);
-       //console.log(countries.data[1].location)
         let length = CO2[1].length;
          let lngth3 = pushstep3.length;
         i=0;
@@ -128,7 +119,6 @@ fetch("https://www.trackcorona.live/api/countries")
         }
        }
     }
-     //console.log(locations);
         })
   .then(
  function initMap() {
@@ -209,7 +199,7 @@ fetch("https://www.trackcorona.live/api/countries")
 
     
 
-      google.maps.event.addListener(marker, 'click', (function(marker, a, image) {
+      google.maps.event.addListener(marker, 'click', (function(marker, a) {
              return function() {
                  infowindow.setContent('<div class="map-info-window">'+ '<h1>'+ locations[a].country + '<h1>'+'<p>' + 'Population: ' + locations[a].pop + ' million ' +'</p>' + '<p>' + 'Life Expectancy: ' + locations[a].lifeexp + '<p>' + 'Living on under 1.9$/day: ' + locations[a].poverty + ' %'  +'</p>' + '<p>' + ' Annual CO2-emission: ' + locations[a].CO2 + ' Kilo tonnes ' + '</div>');
                  infowindow.open(map, marker);
@@ -221,6 +211,6 @@ fetch("https://www.trackcorona.live/api/countries")
 
  .catch(function (error) {
 		// if there's an error, log it
-		console.log(error);
+		alert(error);
     }
 );

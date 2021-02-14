@@ -13,8 +13,8 @@
 
 /*Index page Header section*/
 
-#indexHeader {
-     height: 20vh;
+#indexHeader, #CountryHeader {
+     height: 120px;
     width:100%;
     background-size: 100%;
     background-color: #212f2f;
@@ -35,14 +35,14 @@
 .logo p{
        font-family: "Tillium", sans-serif;
      color:#6b91a4;
-     text-shadow: 3px 3px #1c1e22;
+     text-shadow: 3px 3px #1c1e22; 
     font-size: 38px;
     font-weight: 600;
 }
 
 /* Header navbar Indexpage */
 
-.nav_index{
+.nav, .nav_index{
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 700; 
@@ -50,27 +50,27 @@
         padding-right: 2px;
   }
 
-.nav_index ul{
+.nav ul, .nav_index ul{
        list-style-type: none;
        text-align: center;
       }
-.nav_index li{
+.nav li, .nav_index li{
     margin: 0 28px 0 28px;
 }
 
-.nav_index li a{
+.nav li a,.nav_index li a{
     color:#d6cdc0;
     text-decoration: none;
 }
 
-.nav_index li a:hover{
+.nav li a:hover, .nav_index li a:hover{
     color:#6b91a4;
     text-decoration: none;
 }
 
 /* Header navbar in all pages except Indexpage */
 
-.nav{
+/*.nav{
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     font-weight: 700; 
@@ -94,12 +94,12 @@
 .nav li a:hover{
     color:#6b91a4;
     text-decoration: none;
-}
-
+}*/
 /*Index page Main section */
 
 .info1{
-       padding-top:200px;
+    top:70px;
+       padding-top:100px;
    height:1200px;   
 }
 
@@ -112,7 +112,7 @@
     height:1200px;
     position: fixed;
     text-align: center;
-    top: 20vh;
+    top: 70px;
     left: 0vw;
     right: 0vw;
     z-index: 1;
@@ -124,7 +124,7 @@
 }
 
 .info1 p, .info2t p,.info3t p,.info4t p, .info5t p,.info6t p, .info7t p, .info8t p{
- color:#e1d7d7;
+ color:#dbd7e1;
  text-shadow: black 2px 2px;
  padding-top: 100px;
   font-family: "Roboto", sans-serif;
@@ -160,7 +160,7 @@
 .info2t{
      height:1200px;
     /* background-image:  url("../img/pexels-guduru-ajay-bhargav-1043558.jpg"); */
-    background-color: black;
+    background-color: rgb(101, 87, 87);
     opacity:0.6;
      background-size: 100% 100vh; 
       background-position: center;
@@ -309,8 +309,8 @@
 
   /*Countrydata page Header section*/
 
-       #CountryHeader {
-    height: 20vh;
+   /*    #CountryHeader {
+    height: 70px;
     width:100%;
     padding: 0px 0px 0px 0;
     background-color: white;
@@ -318,13 +318,13 @@
     background-position: 40vh;
          top:0;
     
-     } 
+     } */
 
 /*Countrydata page mainSection*/
 
 .country_mainframe{
-height: 75vh;
-margin-top: 20px;
+height: 400px;
+margin-top:160px;
 color:#ddd5bc;
 text-shadow: 1px solid black;
 }
@@ -362,30 +362,29 @@ text-shadow: 1px solid black;
 /*About page Body*/
 
 #aboutpage{
-    height:80vh;
+        height:80vh;
+        top:25vh;
      background-color: #050506;
 }
 
-/*About page Header*/
-
-
-
-          #aboutheader {
-              background-image: url("../img/klipartz.com_watersurface.png");
-              background-size: 100vw 10vh;
-    height: 25vh;
+#aboutheader {
+     height: 120px;
     width:100%;
-    background-color: #030303;
+    background-size: 100%;
+    background-color: #212f2f;
     background-repeat: no-repeat;
-  
-    
+    background-position: 40vh;
+         top:0;
+         position:fixed;
+         z-index: 2;
      } 
 
 /*About Section main section */
 
 #aboutmain{
     background-color: #000000;
-    height:100vh;
+    margin-top: 150px;
+    height:600px;
 
   }
 
@@ -415,9 +414,10 @@ text-shadow: 1px solid black;
 
 
 .factText  {
-    padding-top: 0px;
+    padding-top: 20px;
+    text-shadow: #971d1d 1px 1px;
         font-family: "Rubik", sans-serif;
-    color: darkgray;
+    color: white;
     font-size: 16px;
        }
 
@@ -432,29 +432,19 @@ text-shadow: 1px solid black;
 .links li a{
            font-family: "Rubik", sans-serif;
     color: white;
+   text-shadow: darkblue 1px 1px;
     font-size: 16px;
      text-decoration: none;
 }
 
 .links ul li a:hover{
            font-family: "Rubik", sans-serif;
-    color: white;
-    font-size: 20px;
+    color: gray;
+        text-shadow: darkblue 1px 1px;
+    font-size: 18px;
      text-decoration: none;
 }
 
-.factText a:hover{
-    color:darkgray;
-     font-size: 22px;
-     text-decoration: none;
-}
-
- 
-.factText a{
-    color: #c7deec;
-     font-size: 22px;
-      text-decoration: none;
-}
 
 .test2Frame{
    height:250px; 
@@ -481,8 +471,8 @@ text-shadow: 1px solid black;
 
 .menu_header {
         position: fixed;
-        top: 3.4vh;
-        right:10vw;
+        top: 20px;
+        right:30px;
   opacity: 90%;
 }
 
@@ -499,8 +489,8 @@ text-shadow: 1px solid black;
 @media screen and (max-width: 1050px) {
 
     #indexHeader {
-        padding-top: 2vh;
-     height: 12vh;   
+        padding-top: 10px;
+     height: 100px;   
      } 
 
 .logo p{
@@ -522,7 +512,7 @@ text-shadow: 1px solid black;
     height:1200px;
     position: fixed;
     text-align: center;
-    top: 10vh;
+    top: 100px;
     left: 0vw;
     right: 0vw;
     z-index: 1;
@@ -535,15 +525,18 @@ text-shadow: 1px solid black;
 
 }
 
+.info2t p a:hover, .info3t p a:hover, .info4t p a:hover, .info5t p a:hover, .info6t p a:hover .info7t p a:hover{
+    font-size:15px;
+}
 
     
 .country_mainframe{
-height: 50vh;
-margin-top: 20px;
+height: 400px;
+margin-top: 140px;
 }
 
     #map{
-  height: 200px; 
+  height: 300px; 
   border: 6px solid #e6e6e6;  
   border-radius: 2%;
 }
@@ -555,7 +548,7 @@ margin-top: 20px;
        }
 
  .abouttext h1,.socialmedialinks h1,.footerlinks h1{
-        padding: 40px 0px 0 0px;
+        padding: 10px 0px 0 0px;
     font-family: "Titillium", sans-serif;
       font-size: 12px;
     font-weight: 600;   
