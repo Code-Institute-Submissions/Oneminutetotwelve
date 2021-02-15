@@ -1,6 +1,6 @@
 # TurningPoint
 
-![Mockup](assets/wireframe/EcoTurningPoint.jpg "Typography EcoTurningPoint")
+![Mockup](assets/wireframe/mockup.png "Typography EcoTurningPoint")
 
 #### The aim of this website is to in a simplistic way present some of todays challenges such climate change, poverty and global warming by using realtime data on global and on countrywise level. This was done using data from Worldbank and connect it to Google-map. Finally I presented options on how to get involved or support different organisations working these challenges.The code for this project is found [here](https://github.com/GurraT/Oneminutetotwelve "Link to Oneminutetotwelve repository")
  
@@ -11,7 +11,7 @@
 
 ### Project Goal
 
-#### The goal of this project is to build a interactive and responsive website presenting todays global challenges using data e.g. Worldbank and connect it to Googlemap. Being a student project i don't take any responsibility in the accuracy and validity of the information extracted from external sources.
+#### The goal of this project is to build a interactive and responsive website presenting todays global challenges using data e.g. Worldbank and connect it to Googlemap. Being a studentproject i don't take any responsibility in the accuracy and validity of the information extracted from external sources.
 
 #### The features on the website will:
 - Give users the possibilty to understand todays global problems based on facts and realtime data
@@ -50,11 +50,11 @@ The personas main goal is to find informations about today problems so that they
 ### Design Choices
 
 #### Typology
-![Typology](assets/wireframe/typo.jpg "Typography EcoTurningPoint")
+![Typology](assets/wireframe/typology.jpg "Typography EcoTurningPoint")
 
 #### Fonts 
 I used following font for my project 
-- Tillium (used in Logo and in about-text and links in Footer as well as text in markerwindow in GSooglemap)
+- Tillium (used in Logo and in about-text and links in Footer as well as text in markerwindow in Googlemap)
 - Roboto (used in infotext on indexpage and as header in Footer)
 - Open Sans (used in links for navbar in header)
 - Rubrik (used in for text and links in main section of about page)
@@ -130,7 +130,7 @@ I used following font for my project
 - User friendly with balanced use of image
 - A Navbar with easy navigation that collapses on mobile displays
 - Footer about section, quick links and socialmedia links
-- Onscroll and parallax function on index page with text and pictures in a balanced porportion to allow users to interact and absorb important inforamtion
+- Onscroll function on index page with text and colorfilter in a balanced porportion to allow users to interact and absorb important inforamtion
 - Google map function on countrydata page with click function on country marker to open window to allow users to navigate and compare information between countries
 - Links to external website explaining the background to some of the challenges we are facing today
 - Links to aid organisations
@@ -139,8 +139,9 @@ I used following font for my project
 ### Future Features
 
 - Activate links to social media
-- Add graphs and figures to Countrydata page with information on how factors at country level such poverty, emission etc.. changed over time
+- Add graphs and figures to Countrydata page with information on how factors at country level such poverty, emission etc.. changes over time
 - Add list and form to index pages with option to search for aid organisation working in a specific field
+- Change background images in about page to decrease loading time and increase preformance
 
 ---
 
@@ -161,7 +162,7 @@ I used following font for my project
 
 ## Testing
 
-- I contucted manual testing and used Lighthouse, google inspection tool, W3C validator(Html/CSS), JsHint (javscript) for automated validatition see results below
+- I conducted manual testing and used Lighthouse, google inspection tool, W3C validator(Html/CSS), JsHint (javscript) for automated validatition see results below
 
 ### Manual testing
 - [Protocol/Manual testing](assets/Documentation/manualtesting.pdf "Manual Testing")
@@ -209,7 +210,7 @@ I used following font for my project
 
 #### I have encountered and fixed following bugs
 - Unable to show google map due restriction in height of the element, solved by changing height of the div in which the function was located
-- Unable to show some function in google map due to overlaying footer element, changed the size of the footer section to avoid overlaying effects
+- Unable to show some functions in google map due to overlaying footer element, changed the size of the footer section to avoid overlaying effects
 - Depedending on device type picture and text are presented in an unsynchronized manor while scrolling through the index page, solved by removing picture and add a colorfilter incoporated in onscroll function instead of using parallax effect in css
 
 
@@ -271,7 +272,7 @@ The website was developed using both Gitpod for constructing code which then was
 - Scrolled down to the Section GitHub pages
 - Selected master branch in the source dropdown menu
 - Confirmed choice by clicking on save
-#### To see the end result and open deployed code in a webbrowser following steps were conducted 
+#### To see the endresult and open deployed code in a webbrowser following steps were conducted 
 - Navigated to my repository [GurraT/Oneminutetotwelve](https://github.com/GurraT/Oneminutetotwelve) 
 - Click on the code buttom
 - Selected http-adress and copied it to a webbrowser
