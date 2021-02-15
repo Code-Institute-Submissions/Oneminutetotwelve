@@ -61,10 +61,10 @@ I used following font for my project
 
 #### Colors
 
-
+- I focused mainly on black,white, gray colortheme to create a clear, simple and easy to read webpage,  the aim is that colorfilter in index scrollfunction, backgroundimage and googlemap function should draw attention
 
 #### Wireframe
-![Wireframe](assets/wireframe/Ecoturningpoint.pdf "Wireframe EcoTurningPoint")
+[Wireframe](assets/wireframe/Ecoturningpoint.pdf "Wireframe EcoTurningPoint")
 
 
 ## Technologies Used
@@ -116,7 +116,10 @@ I used following font for my project
   - Used for validating the html-code
 - freeformatter.com
     - Used for formatting/beatify CSS and Html-code
-
+- JsHint.com
+    - Used for validating javascript code
+- beautifier.io
+    - Used for formatting/beatify javascript code
 ---
 
 ## Features
@@ -158,21 +161,62 @@ I used following font for my project
 
 ## Testing
 
-- Aiming to use Lighthouse, google inspection tool, W3C validator(Html/CSS), manual testing will be presented as a pdf-protocol
+- I contucted manual testing and used Lighthouse, google inspection tool, W3C validator(Html/CSS), JsHint (javscript) for automated validatition see results below
+
+### Manual testing
+- [Protocol/Manual testing](assets/Documentation/manualtesting.pdf "Manual Testing")
+
+### Automated testing of style.css
+- [W3C CSS validation](assets/Documentation/W3CsValidation.png "Css Testing of style.css")
+
+### Automated testing of index page
+- [W3C Hmtl validation](assets/Documentation/W3CsHtmlValidation_indexpage.png "Html Testing of index page")
+- [Result from lighthouse for large device](assets/Documentation/ValidationLightHouse_LargeDevice_indexpage.png "Test index page on computer through Lighthouse")
+- [Result from lighthouse for mobile device](assets/Documentation/ValidationLightHouse_MobileDevice_indexpage.png "Test index page on mobile devices through Lighthouse")
+
+### Automated testing of Countrydata page
+- [W3C Hmtl validation](assets/Documentation/W3CsHtmlValidation_CountryDatapage.png "Html Testing of countrydata page")
+- [Result from lighthouse for large device](assets/Documentation/ValidationLightHouse_LargeDevice_CountryDatapage.png "Test countrydata page on computer through Lighthouse")
+- [Result from lighthouse for mobile device](assets/Documentation/ValidationLightHouse_MobileDevice_CountryDatapage.png "Test countrydata page on mobile devices through Lighthouse")
+
+### Automated testing of About page
+- [W3C Hmtl validation](assets/Documentation/W3CsHtmlValidation_Aboutpage.png "Html Testing of about page")
+- [Result from lighthouse for large device](assets/Documentation/ValidationLightHouse_LargeDevice_Aboutpage.png "Test about page on computer through Lighthouse")
+- [Result from lighthouse for mobile device](assets/Documentation/ValidationLightHouse_MobileDevice_Aboutpage.png "Test about page on mobile devices through Lighthouse")
+
+### Automated testing of javascript code 
+- [Validation through jsHint on addText.js](assets/Documentation/jsValidationAddTextScript.png "javascript validation of addText.js")
+- [Validation through jsHint on worlddata.js](assets/Documentation/jsValidationWorldDataScript.png "javascript validation of worlddata.js")
+- [Validation through jsHint on worldmap.js](assets/Documentation/jsValidationWorldMapScript.png "javascript validation of worldmap.js")
+
+### The end product has been tested on following mobile devices trough chrome dev tool
+- Blackberry Playbook
+- Moto G4
+- Galaxy S5 
+- Pixel 2
+- iPhone 5SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad Pro
+- Surface Duo 
+- Galaxy Fold
+
+
+
 
 ### Fixed Bugs
 
 #### I have encountered and fixed following bugs
 - Unable to show google map due restriction in height of the element, solved by changing height of the div in which the function was located
 - Unable to show some function in google map due to overlaying footer element, changed the size of the footer section to avoid overlaying effects
+- Depedending on device type picture and text are presented in an unsynchronized manor while scrolling through the index page, solved by removing picture and add a colorfilter incoporated in onscroll function instead of using parallax effect in css
+
+
 
 ### Known Bugs
-- Depedending on device type picture and text are presented in an unsynchronized manor while scrolling through the index page, one solution could be to incoporate the image in onscroll function instead of using parallax effect in css
 - Coordinates from trackCorona are only used in training purpose and i take no responsibility in the accuracy of the data
 
-### Concerns
-
-- I experience that my code at some occasions are altered without my help (e.g. altered fontsize, href and div size)
 
 ---
 ## Credits
@@ -241,6 +285,8 @@ The website was developed using both Gitpod for constructing code which then was
 ### Acknowledgements
 
 - I am grateful for the feedback i got from my mentor Narender Singh at Code Institute e.g., to make my webpage more interactive and user friendly using parallax function
+- I am also grateful for the feedback I got from my second mentor Aarron Sinnot at Code Institute e.g., to make my design more clear and readable 
+
 
 #### I also want to thanks following people
 
