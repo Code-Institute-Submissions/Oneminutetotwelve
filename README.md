@@ -36,14 +36,14 @@ The personas main goal is to find informations about today problems so that they
 ### User Stories
 
 #### As a knowledge seeker I want to have a website with realtime data connected to a mapfunction and links to Aidorganisations so that....
-1.  I can find information about todays problems
-2.  I can compare and get an idea on how the problems differ between countries 
-3.  I can find and engage in aid organisations that work with challenges that concerns me
+1.  I can find information about todays problems (see examples from index page [here](assets/documentation/severity.png "Example from indexpage"))
+2.  I can compare and get an idea on how the problems differ between countries (see examples from google map function [here](assets/documentation/compare.png "Example from googlemap function"))
+3.  I can find and engage in aid organisations that work with challenges that concerns me (see examples from about page [here](assets/documentation/aidorg "Example from about page"))
 
 #### As a person who want to get involved and change problems on global scale I want to have a website with realtime data connected to a mapfunction and links to Aidorganisation so that....
-1.  I can find information and get an idea on the severity of a specific problem
-2.  I can compare and get an idea on how the problems differ between countries 
-3.  I can support and get involved in an organisation that work with challenges that concerns me
+1.  I can find information and get an idea on the severity of a specific problem (see examples from index page [here](assets/documentation/severity.png "Example from indexpage"))
+2.  I can compare and get an idea on how the problems differ between countries (see examples from google map function [here](assets/documentation/compare.png "Example from googlemap function"))
+3.  I can support and get involved in an organisation that work with challenges that concerns me  (see examples from about page [here](assets/documentation/aidorg "Example from about page"))
 
 -----
 
